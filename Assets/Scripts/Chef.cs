@@ -39,12 +39,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Apply movement
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Jumping logic
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);  // Jump
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);  // Jump
             isGrounded = false;  // The player is no longer grounded once they jump
         }
     }

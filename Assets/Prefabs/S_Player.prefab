@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8608947693136069707}
   - component: {fileID: 4285588057797662906}
+  - component: {fileID: -7940940379797003364}
+  - component: {fileID: -3082910404021103301}
   - component: {fileID: 4858024422343903954}
   - component: {fileID: 8044210586220745368}
   - component: {fileID: 4348692590283157905}
@@ -48,7 +50,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2773133fdec334c839566d0a33ec1cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  <speed>k__BackingField: 10
+  <jumpHeight>k__BackingField: 10
+--- !u!114 &-7940940379797003364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403843293701222799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aec2d9b5f2ef41fdbbfc4d15cffe0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3082910404021103301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403843293701222799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a326f79e0d82a4db9acb95478f131536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <left>k__BackingField: 97
+  <right>k__BackingField: 100
+  <jump>k__BackingField: 32
 --- !u!212 &4858024422343903954
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -118,7 +148,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

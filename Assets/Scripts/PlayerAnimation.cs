@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -6,7 +8,7 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D _rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         playerAnimator = gameObject.GetComponent<Animator>();
@@ -17,6 +19,10 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerAnimator.SetBool("Run", _rb.linearVelocityX != 0);
+        updateRun();
+    }
+
+    private void updateRun() {
+        playerAnimator.SetBool("Run", Input.GetKey(PlayerController.Instance.left) || Input.GetKey(PlayerController.Instance.right));
     }
 }
