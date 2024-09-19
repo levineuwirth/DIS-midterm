@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    private Animator playerAnimator;
+    public Animator playerAnimator {get ; private set;}
     private Rigidbody2D _rb;
+    public static PlayerAnimation Instance;
 
+
+    void Awake() {
+        Instance = this;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         playerAnimator = gameObject.GetComponent<Animator>();
         playerAnimator.SetBool("Dead", false);
-        playerAnimator.SetBool("isGrounded", true);
     }
 
     // Update is called once per frame

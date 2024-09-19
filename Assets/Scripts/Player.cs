@@ -41,6 +41,8 @@ public class Player : MonoBehaviour
     }
 
     private void checkGround() {
+        // bug?
         isGrounded = onGround.collider != null && onGround.collider.gameObject.tag == "Ground";
+        PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded);
     }
 }
