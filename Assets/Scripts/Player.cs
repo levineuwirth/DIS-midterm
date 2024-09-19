@@ -4,6 +4,7 @@ public class Player : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+    public float speed;
     private Rigidbody2D _rb;
 
     void Start()
@@ -18,6 +19,6 @@ public class Player : MonoBehaviour
     }
 
     private void movePlayer() {
-        _rb.linearVelocityX = Input.GetAxisRaw("Horizontal");
+        _rb.linearVelocityX = Input.GetAxisRaw("Horizontal") * speed;
     }
 }
