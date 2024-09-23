@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: -3082910404021103301}
   - component: {fileID: 4858024422343903954}
   - component: {fileID: 8044210586220745368}
-  - component: {fileID: 4348692590283157905}
   - component: {fileID: 4677720603884907380}
+  - component: {fileID: 5868752029195374142}
   m_Layer: 0
   m_Name: S_Player
   m_TagString: Untagged
@@ -50,8 +50,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2773133fdec334c839566d0a33ec1cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <speed>k__BackingField: 10
-  <jumpHeight>k__BackingField: 10
+  <moveSpeed>k__BackingField: 9
+  <acceleration>k__BackingField: 13
+  <decceleration>k__BackingField: 16
+  <velPower>k__BackingField: 0.96
+  jumpForce: 50
+  <boxSize>k__BackingField: {x: 2, y: 0.34}
+  <castDistance>k__BackingField: 1.15
+  <groundLayer>k__BackingField:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &-7940940379797003364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,8 +157,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 10
+  m_Material: {fileID: 6200000, guid: 82ff822ac3d124c3cb492a285626fc0f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -160,9 +168,31 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &4348692590283157905
-BoxCollider2D:
+  m_Constraints: 4
+--- !u!95 &4677720603884907380
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403843293701222799}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59b510eeb7a494d0a846e0d3ab9fe9ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!58 &5868752029195374142
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -171,7 +201,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 82ff822ac3d124c3cb492a285626fc0f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -196,36 +226,4 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.21, y: 0.29}
-    newSize: {x: 0.21, y: 0.29}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!95 &4677720603884907380
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403843293701222799}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 59b510eeb7a494d0a846e0d3ab9fe9ad, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_Radius: 0.145

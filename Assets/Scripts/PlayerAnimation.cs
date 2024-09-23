@@ -8,7 +8,6 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D _rb;
     public static PlayerAnimation Instance;
 
-
     void Awake() {
         Instance = this;
     }
