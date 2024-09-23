@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     //issue caused by serilaizefield?? 
     public float jumpForce;
     [field: SerializeField] public float jumpCutMultiplier {get ; private set;}
+    private float gravityScale;
+    [field: SerializeField] public float fallGravityMultiplier {get ; private set;}
     private Rigidbody2D _rb;
 
     [Header("Ground Check Visualizer")]
@@ -22,10 +24,13 @@ public class Player : MonoBehaviour
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
     private bool _isJumpBuffered = false;
+    private bool _isJumpRelease = false;
+    private bool _jumpCutDone = false;
     private float _moveInput;
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
+        gravityScale = _rb.gravityScale;
     }
 
     // Update is called once per frame
@@ -40,8 +45,13 @@ public class Player : MonoBehaviour
             _moveInput = 1;
         } else _moveInput = 0;
 
-        if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded())
+        if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
             _isJumpBuffered = true;
+            _jumpCutDone = false;
+        }
+        
+        if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone)
+            _isJumpRelease = true;
     }
 
     private void FixedUpdate() {
@@ -76,11 +86,20 @@ public class Player : MonoBehaviour
             _isJumpBuffered = false;
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
-        //implement jump cut
-        // else if(!_isPressingJump) {
-        //     _rb.AddForce(Vector2.down * _rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
-        // }
+        // implement jump cut
+        else if(_isJumpRelease) {
+            _isJumpRelease = false;
+            _jumpCutDone = true;
+            _rb.AddForce(Vector2.down * _rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
+        }
         #endregion
+
+        if(_rb.linearVelocityY < 0) {
+            _rb.gravityScale = gravityScale * fallGravityMultiplier;
+        }
+        else {
+            _rb.gravityScale = gravityScale;
+        }
     }
 
     private void jump() {
