@@ -11,25 +11,26 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float frictionAmount {get ; private set;}
 
     [Header("Jumping")]
-    //issue caused by serilaizefield?? 
     public float jumpForce;
     [field: SerializeField] public float jumpCutMultiplier {get ; private set;}
-    private float gravityScale;
     [field: SerializeField] public float fallGravityMultiplier {get ; private set;}
-    private Rigidbody2D _rb;
 
     [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
+    private Rigidbody2D _rb;
+    private SpriteRenderer _sr;
     private bool _isJumpBuffered = false;
     private bool _isJumpRelease = false;
     private bool _jumpCutDone = false;
     private float _moveInput;
+    private float gravityScale;
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
+        _sr = gameObject.GetComponent<SpriteRenderer>();
         gravityScale = _rb.gravityScale;
     }
 
@@ -37,6 +38,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
+
+        if(_rb.linearVelocityX < 0) {
+            _sr.flipX = true;
+        }
+        else if(_rb.linearVelocityX > 0) {
+            _sr.flipX = false;
+        }
 
         if(Input.GetKey(PlayerController.Instance.left)) {
             _moveInput = -1;
@@ -94,6 +102,7 @@ public class Player : MonoBehaviour
         }
         #endregion
 
+        //TODO: dont modify gravity, add force
         if(_rb.linearVelocityY < 0) {
             _rb.gravityScale = gravityScale * fallGravityMultiplier;
         }

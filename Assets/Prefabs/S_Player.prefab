@@ -54,7 +54,10 @@ MonoBehaviour:
   <acceleration>k__BackingField: 13
   <decceleration>k__BackingField: 16
   <velPower>k__BackingField: 0.96
+  <frictionAmount>k__BackingField: 0
   jumpForce: 50
+  <jumpCutMultiplier>k__BackingField: 0
+  <fallGravityMultiplier>k__BackingField: 0
   <boxSize>k__BackingField: {x: 2, y: 0.34}
   <castDistance>k__BackingField: 1.15
   <groundLayer>k__BackingField:
@@ -131,7 +134,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8335597316133693359, guid: a9dc8d9c18edf417b8adb9732b97c18d, type: 3}
+  m_Sprite: {fileID: -2300005727306453467, guid: b0e68dc685f7648b391b0c8705137c4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
