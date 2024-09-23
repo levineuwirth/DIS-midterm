@@ -6,18 +6,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Movement")]
     [field: SerializeField] public float moveSpeed {get ; private set;}
     [field: SerializeField] public float acceleration {get ; private set;}
     [field: SerializeField] public float decceleration {get ; private set;}
     [field: SerializeField] public float velPower {get ; private set;}
     [field: SerializeField] public float frictionAmount {get ; private set;}
-    [field: SerializeField] public float jumpCutMultiplier {get ; private set;}
 
+    [Header("Jumping")]
     //issue caused by serilaizefield?? 
     public float jumpForce;
+    [field: SerializeField] public float jumpCutMultiplier {get ; private set;}
     private Rigidbody2D _rb;
 
+    [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
