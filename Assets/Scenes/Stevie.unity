@@ -330,6 +330,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
+      propertyPath: <velPower>k__BackingField
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <boxSize>k__BackingField.x
       value: 2
       objectReference: {fileID: 0}
@@ -343,11 +347,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <moveSpeed>k__BackingField
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <jumpHeight>k__BackingField
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
+      propertyPath: <acceleration>k__BackingField
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <castDistance>k__BackingField
@@ -359,11 +367,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <jumpCutMultiplier>k__BackingField
-      value: 0.4
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <groundLayer>k__BackingField.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
+      propertyPath: <fallGravityMultiplier>k__BackingField
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4348692590283157905, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: m_Size.x

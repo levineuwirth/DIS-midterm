@@ -10,6 +10,13 @@ public class ItemSpawner: MonoBehaviour {
     
     void Start(){
 	Queue<Item> spawns = new Queue<Item>();
-	
+	foreach (Item item in spawnableItems){
+	    spawns.Enqueue(item);
+	}
+	// Queue is now initialized. Send off a coroutine for the spawning loop?
+    }
+
+    void Update(){
+	// anything here?
     }
 }
