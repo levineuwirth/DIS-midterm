@@ -1,7 +1,4 @@
 using System;
-using System.Data.Common;
-using Unity.VisualScripting.ReorderableList.Element_Adder_Menu;
-using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -24,6 +21,8 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
+    private bool _isJumpBuffered = false;
+    private float _moveInput;
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
@@ -33,6 +32,16 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
+
+        if(Input.GetKey(PlayerController.Instance.left)) {
+            _moveInput = -1;
+        }
+        else if(Input.GetKey(PlayerController.Instance.right)) {
+            _moveInput = 1;
+        } else _moveInput = 0;
+
+        if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded())
+            _isJumpBuffered = true;
     }
 
     private void FixedUpdate() {
@@ -42,16 +51,8 @@ public class Player : MonoBehaviour
     private void movePlayer() {
         
         #region Run
-        float moveInput = 0;
-        
-        if(Input.GetKey(PlayerController.Instance.left)) {
-            moveInput = -1;
-        }
-        else if(Input.GetKey(PlayerController.Instance.right)) {
-            moveInput = 1;
-        }
 
-        float targetSpeed = moveInput * moveSpeed;
+        float targetSpeed = _moveInput * moveSpeed;
 
         float speedDif = targetSpeed - _rb.linearVelocityX;
 
@@ -71,13 +72,14 @@ public class Player : MonoBehaviour
         #endregion
 
         #region Jump
-        if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
+        if(_isJumpBuffered) {
+            _isJumpBuffered = false;
             _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
         //implement jump cut
-        else if(Input.GetKeyUp(PlayerController.Instance.jump)) {
-            _rb.AddForce(Vector2.down * _rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
-        }
+        // else if(!_isPressingJump) {
+        //     _rb.AddForce(Vector2.down * _rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
+        // }
         #endregion
     }
 
