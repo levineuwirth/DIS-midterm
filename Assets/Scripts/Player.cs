@@ -12,8 +12,7 @@ public class Player : MonoBehaviour
 
     [Header("Jumping")]
     public float jumpForce;
-    [field: SerializeField] public float jumpCutMultiplier {get ; private set;}
-    [field: SerializeField] public float fallGravityMultiplier {get ; private set;}
+    [field: SerializeField] public float downwardForce {get ; private set;}
 
     [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
@@ -22,16 +21,19 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
+    private ParticleSystem _dust;
+    private AudioSource jumpSound;
     private bool _isJumpBuffered = false;
     private bool _isJumpRelease = false;
     private bool _jumpCutDone = false;
     private float _moveInput;
-    private float gravityScale;
+
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _sr = gameObject.GetComponent<SpriteRenderer>();
-        gravityScale = _rb.gravityScale;
+        _dust = gameObject.GetComponent<ParticleSystem>();
+        jumpSound = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -39,27 +41,18 @@ public class Player : MonoBehaviour
     {
         PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
 
-        if(_rb.linearVelocityX < 0) {
-            _sr.flipX = true;
-        }
-        else if(_rb.linearVelocityX > 0) {
-            _sr.flipX = false;
-        }
+        _moveInput = Input.GetAxisRaw("Horizontal");
 
-        if(Input.GetKey(PlayerController.Instance.left)) {
-            _moveInput = -1;
-        }
-        else if(Input.GetKey(PlayerController.Instance.right)) {
-            _moveInput = 1;
-        } else _moveInput = 0;
+        flipSprite();
 
         if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
             _isJumpBuffered = true;
             _jumpCutDone = false;
         }
         
-        if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone)
+        if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone) {
             _isJumpRelease = true;
+        }
     }
 
     private void FixedUpdate() {
@@ -67,9 +60,12 @@ public class Player : MonoBehaviour
     }
 
     private void movePlayer() {
-        
-        #region Run
+        Run();
+        Jump();
+        FastFall();
+    }
 
+    private void Run() {
         float targetSpeed = _moveInput * moveSpeed;
 
         float speedDif = targetSpeed - _rb.linearVelocityX;
@@ -79,40 +75,41 @@ public class Player : MonoBehaviour
         float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
 
         _rb.AddForce(movement * Vector2.right);
-        #endregion
 
-        #region Friction
+        ApplyFriction(targetSpeed);
+    }
+
+    private void Jump() {
+        if(_isJumpBuffered) {
+            _isJumpBuffered = false;
+            _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+
+            // vfx and sfx
+            CreateDust();
+            PlayJumpSFX();
+        }
+
+        // implement jump cut
+        else if(_isJumpRelease) {
+            _isJumpRelease = false;
+            _jumpCutDone = true;
+            _rb.AddForce(Vector2.down * _rb.linearVelocityY, ForceMode2D.Impulse);
+        }
+    }
+    
+    private void FastFall() {
+        if(_rb.linearVelocityY < 0) {
+            _rb.AddForce(Vector2.down * downwardForce * _rb.mass, ForceMode2D.Force);
+        }
+        //TODO: Clamp?
+    }
+
+    private void ApplyFriction(float targetSpeed) {
         if(isGrounded() && Mathf.Abs(targetSpeed) < 0.01f) {
             float amount = Mathf.Min(Mathf.Abs(_rb.linearVelocityX), Math.Abs(frictionAmount)) * Mathf.Sign(_rb.linearVelocityX);
 
             _rb.AddForce(Vector2.right * -amount, ForceMode2D.Impulse);
         }
-        #endregion
-
-        #region Jump
-        if(_isJumpBuffered) {
-            _isJumpBuffered = false;
-            _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
-        // implement jump cut
-        else if(_isJumpRelease) {
-            _isJumpRelease = false;
-            _jumpCutDone = true;
-            _rb.AddForce(Vector2.down * _rb.linearVelocityY * (1 - jumpCutMultiplier), ForceMode2D.Impulse);
-        }
-        #endregion
-
-        //TODO: dont modify gravity, add force
-        if(_rb.linearVelocityY < 0) {
-            _rb.gravityScale = gravityScale * fallGravityMultiplier;
-        }
-        else {
-            _rb.gravityScale = gravityScale;
-        }
-    }
-
-    private void jump() {
-        _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
     // shoots a box raycast below the player to check if player is grounded
@@ -123,5 +120,22 @@ public class Player : MonoBehaviour
     // visualizes the raycast hitbox and allows editing in the unity editor
     private void OnDrawGizmos() {
         Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize);
+    }
+
+    private void CreateDust() {
+        _dust.Play();
+    }
+
+    private void PlayJumpSFX() {
+        jumpSound.Play();
+    }
+
+    private void flipSprite() {
+        // add particles when changing direction
+        if(_sr.flipX != PlayerAnimation.Instance.getFlip() && isGrounded()) {
+            CreateDust();
+        }
+
+        _sr.flipX = PlayerAnimation.Instance.getFlip();
     }
 }
