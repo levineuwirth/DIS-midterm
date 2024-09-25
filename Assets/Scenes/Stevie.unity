@@ -335,12 +335,8 @@ PrefabInstance:
       value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
-      propertyPath: <velPower>k__BackingField
-      value: 1.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
-      propertyPath: <velPower>k__BackingField
-      value: 1.2
+      propertyPath: <dust>k__BackingField
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4285588057797662906, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: <velPower>k__BackingField
@@ -452,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8044210586220745368, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: m_CollisionDetection
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8608947693136069707, guid: e8e589fee090345e586373525ec9835a, type: 3}
       propertyPath: m_LocalScale.x
