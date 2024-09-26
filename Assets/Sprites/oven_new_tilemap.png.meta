@@ -397,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oven_new_tilemap_0: 489731276507173733
+      oven_new_tilemap_1: -2683154174472932816
+      oven_new_tilemap_10: -6840173558062213717
+      oven_new_tilemap_2: 2268808060249817418
+      oven_new_tilemap_3: -8988446136649545846
+      oven_new_tilemap_4: 6434676204662253285
+      oven_new_tilemap_5: 8341973221129202919
+      oven_new_tilemap_6: 2219257822146767595
+      oven_new_tilemap_7: 7149034293821698008
+      oven_new_tilemap_8: 7620957205735042892
+      oven_new_tilemap_9: -436277758656468687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

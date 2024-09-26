@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -19,10 +21,14 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
+    [Header("Item Inventory")]
+    [field: SerializeField] public float itemPosBuffer {get ; private set;}
+
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
     private ParticleSystem _dust;
-    private AudioSource jumpSound;
+    private AudioSource _jumpSound;
+    private List<GameObject> _inventory;
     private bool _isJumpBuffered = false;
     private bool _isJumpRelease = false;
     private bool _jumpCutDone = false;
@@ -33,7 +39,9 @@ public class Player : MonoBehaviour
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _sr = gameObject.GetComponent<SpriteRenderer>();
         _dust = gameObject.GetComponent<ParticleSystem>();
-        jumpSound = gameObject.GetComponent<AudioSource>();
+        _jumpSound = gameObject.GetComponent<AudioSource>();
+        _inventory = new List<GameObject>();
+        _inventory.Capacity = 1;
     }
 
     // Update is called once per frame
@@ -63,6 +71,7 @@ public class Player : MonoBehaviour
         Run();
         Jump();
         FastFall();
+        HoldItem();
     }
 
     private void Run() {
@@ -127,7 +136,7 @@ public class Player : MonoBehaviour
     }
 
     private void PlayJumpSFX() {
-        jumpSound.Play();
+        _jumpSound.Play();
     }
 
     private void flipSprite() {
@@ -137,5 +146,26 @@ public class Player : MonoBehaviour
         }
 
         _sr.flipX = PlayerAnimation.Instance.getFlip();
+    }
+
+    private void AddItem(GameObject item) {
+        _inventory.Add(item);
+    }
+
+    private void HoldItem() {
+        if(_inventory.Any()) {
+            _inventory.ElementAt(0).transform.position = transform.position + Vector3.up * itemPosBuffer;
+        }
+    }
+
+    private void ThrowItem() {
+        PlayerAnimation.Instance.playerAnimator.SetTrigger("Throw");
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Item") {
+            AddItem(other.gameObject);
+        }
     }
 }

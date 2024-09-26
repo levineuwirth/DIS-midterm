@@ -39,5 +39,10 @@ public class PlayerAnimation : MonoBehaviour
         return _flip;
     }
 
+    public void setThrow() {
+        playerAnimator.SetTrigger("Throw");
+        playerAnimator.ResetTrigger("Throw");
+    }
+
     // TODO: make transition to jump faster
 }

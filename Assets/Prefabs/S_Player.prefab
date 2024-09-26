@@ -92,6 +92,7 @@ MonoBehaviour:
   <left>k__BackingField: 97
   <right>k__BackingField: 100
   <jump>k__BackingField: 32
+  <throwItem>k__BackingField: 106
 --- !u!212 &4858024422343903954
 SpriteRenderer:
   m_ObjectHideFlags: 0
