@@ -12,7 +12,9 @@ public class Item : MonoBehaviour {
     // This has to be public. The ItemSpawner needs to know where the item can spawn.
     // Entries here also have to be in the ItemSpawner's spawn locations array.
     public Vector3[] allowedLocations;
-    // other properties that we haven't thought of will go here...
+
+    // FOR SPECIFIC CONDITIONS ON SPAWNING, e.g. spawning inside the tutorial's oven when it is open,
+    // you MUST make a child class extending Item and implement the functionality on a case by case basis.
 
     public void onSubmit(){
 	// if it's trash, bad, if it isn't, good!
