@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rubeweed_0: -8212790656637687796
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

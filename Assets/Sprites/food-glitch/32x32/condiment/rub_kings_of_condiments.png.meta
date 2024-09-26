@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rub_kings_of_condiments_0: 37500148480025879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

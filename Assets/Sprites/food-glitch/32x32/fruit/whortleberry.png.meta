@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      whortleberry_0: 186395836052074616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

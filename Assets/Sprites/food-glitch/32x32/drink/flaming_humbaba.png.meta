@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flaming_humbaba_0: 5427410360890656525
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

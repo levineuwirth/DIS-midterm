@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spread_cloudberry_jam_0: -6686570849964614930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

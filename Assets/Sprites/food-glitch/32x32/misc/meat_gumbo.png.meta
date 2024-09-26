@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meat_gumbo_0: 569266214837406033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      waffle_0: -6425830651967066815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

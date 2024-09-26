@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cornbread_0: 4134589415133169748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

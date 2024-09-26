@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lasagna_0: -260109549649344928
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

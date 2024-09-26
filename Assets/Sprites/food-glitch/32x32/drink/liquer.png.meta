@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      liquer_0: -1741982237690233764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

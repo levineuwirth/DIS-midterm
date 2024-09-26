@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      quesadilla_0: 974669305427659840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

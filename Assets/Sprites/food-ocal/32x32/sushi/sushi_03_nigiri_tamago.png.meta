@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sushi_03_nigiri_tamago_0: -3523578667778173712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

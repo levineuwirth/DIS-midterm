@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_cream_bar_02_0: 6693848614538109682
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

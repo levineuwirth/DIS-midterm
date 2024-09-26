@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      thimble_berry_0: 1349219509915990131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

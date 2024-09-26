@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      carpaccio_0: 548536206596835066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

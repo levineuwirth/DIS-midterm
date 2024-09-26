@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hot_pepper_0: -8656728783296621678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

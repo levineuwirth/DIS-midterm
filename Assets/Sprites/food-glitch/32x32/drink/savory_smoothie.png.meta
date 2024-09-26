@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      savory_smoothie_0: 616720086198381765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

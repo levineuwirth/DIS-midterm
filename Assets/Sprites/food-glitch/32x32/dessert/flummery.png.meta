@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flummery_0: 5166402427808204465
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

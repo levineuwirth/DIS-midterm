@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cardamom_0: -478576139718135377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

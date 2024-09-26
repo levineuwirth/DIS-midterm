@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tofu_01_0: 1676217272462846306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

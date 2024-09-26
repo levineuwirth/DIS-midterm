@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sauce_tangy_0: -7987699786253675031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

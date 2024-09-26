@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      testes_mountain_oyster_0: -6265191253514829482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

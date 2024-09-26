@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sushi_01_gunkanmaki_tekka_0: 1904301064645978181
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

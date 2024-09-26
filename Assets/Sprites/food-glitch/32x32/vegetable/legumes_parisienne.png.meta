@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      legumes_parisienne_0: -7281842143609420532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

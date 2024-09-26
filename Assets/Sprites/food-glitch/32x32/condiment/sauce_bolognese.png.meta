@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sauce_bolognese_0: 3898987343574956392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

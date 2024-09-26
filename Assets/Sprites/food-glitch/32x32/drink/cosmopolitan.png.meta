@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cosmopolitan_0: 8792701540158806200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

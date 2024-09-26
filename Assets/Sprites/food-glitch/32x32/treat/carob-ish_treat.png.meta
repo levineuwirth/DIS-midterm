@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      carob-ish_treat_0: 985363717796802702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

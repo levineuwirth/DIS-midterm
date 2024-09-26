@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sandwich_cheesy_0: -3798099760816544806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

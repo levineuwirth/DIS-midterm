@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      taco_02_0: -4761116246563141733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

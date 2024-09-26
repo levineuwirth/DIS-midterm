@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      seed_veggies_02_0: -1258215186610743163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

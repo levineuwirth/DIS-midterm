@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      earthshaker_0: 7027357105795509773
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

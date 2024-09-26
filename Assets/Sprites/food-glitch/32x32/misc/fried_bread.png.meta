@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fried_bread_0: -5302605843483069334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

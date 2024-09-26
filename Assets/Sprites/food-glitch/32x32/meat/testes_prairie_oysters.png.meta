@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      testes_prairie_oysters_0: -55448869149366958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

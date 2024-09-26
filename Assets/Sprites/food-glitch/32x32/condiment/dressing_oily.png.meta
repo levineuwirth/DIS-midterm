@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dressing_oily_0: -2217803894212557399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

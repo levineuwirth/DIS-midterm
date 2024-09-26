@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ice_cream_sundae_01_0: 2397680629426819362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salmon_jaella_0: 5025395586165649869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

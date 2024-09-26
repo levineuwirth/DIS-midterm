@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloudberry_0: 4215513925598282781
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

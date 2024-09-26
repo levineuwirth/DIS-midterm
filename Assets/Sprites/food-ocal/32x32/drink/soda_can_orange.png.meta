@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      soda_can_orange_0: 4080409607418852961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

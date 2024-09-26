@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      guava_02_0: -6300737121402814398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

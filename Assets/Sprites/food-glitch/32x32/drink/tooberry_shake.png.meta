@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tooberry_shake_0: 3692178125542906067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

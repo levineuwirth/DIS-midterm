@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      omelet_01_0: -5154505921320675673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

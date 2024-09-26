@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mabbish_coffee_0: 5094033189663104321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

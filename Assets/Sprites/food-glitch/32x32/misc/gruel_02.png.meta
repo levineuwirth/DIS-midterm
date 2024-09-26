@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gruel_02_0: -6073683162713374086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

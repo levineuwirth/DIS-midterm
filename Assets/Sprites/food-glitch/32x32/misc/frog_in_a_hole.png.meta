@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      frog_in_a_hole_0: 4493652477287491391
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

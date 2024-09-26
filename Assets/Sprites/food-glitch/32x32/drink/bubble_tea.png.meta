@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubble_tea_0: -3825394856657833456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

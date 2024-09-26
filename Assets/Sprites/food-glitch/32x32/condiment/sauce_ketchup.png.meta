@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sauce_ketchup_0: 197641473785381979
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

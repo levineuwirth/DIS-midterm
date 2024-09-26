@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rice_steamed_0: 9126773387565631524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

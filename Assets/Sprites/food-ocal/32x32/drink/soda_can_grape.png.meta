@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      soda_can_grape_0: 4669504088133660975
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

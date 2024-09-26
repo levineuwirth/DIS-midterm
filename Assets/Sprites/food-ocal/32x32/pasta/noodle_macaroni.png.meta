@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      noodle_macaroni_0: 2106510456466265034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

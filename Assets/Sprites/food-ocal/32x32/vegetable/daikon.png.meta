@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      daikon_0: 531345679231033055
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

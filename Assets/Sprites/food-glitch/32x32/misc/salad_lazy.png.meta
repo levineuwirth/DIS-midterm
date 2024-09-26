@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salad_lazy_0: 5644305552320239585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

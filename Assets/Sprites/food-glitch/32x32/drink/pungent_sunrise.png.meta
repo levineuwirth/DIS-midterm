@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pungent_sunrise_0: 3463596013268587216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

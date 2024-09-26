@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cloudberry_daiquiri_0: -1774563379966067676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sashimi_0: 3423193769692255437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

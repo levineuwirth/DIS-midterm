@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rub_naraka_flame_0: 2190580113055503896
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

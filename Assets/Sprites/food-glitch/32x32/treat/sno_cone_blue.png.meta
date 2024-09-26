@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sno_cone_blue_0: 4177315559450115022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

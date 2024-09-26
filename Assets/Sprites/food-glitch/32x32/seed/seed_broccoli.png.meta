@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      seed_broccoli_0: 7498421270604762808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

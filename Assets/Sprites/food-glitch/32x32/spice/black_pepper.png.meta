@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      black_pepper_0: 5102435302969789738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sushi_02_nigiri_shimesaba_0: 5335980598526420266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

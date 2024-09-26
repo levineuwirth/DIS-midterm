@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mangosteen_0: -1020200330268406623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

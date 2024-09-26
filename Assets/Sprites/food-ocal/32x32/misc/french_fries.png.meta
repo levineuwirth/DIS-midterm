@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      french_fries_0: -84346807868760006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

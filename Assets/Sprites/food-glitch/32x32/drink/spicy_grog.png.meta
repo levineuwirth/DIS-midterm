@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spicy_grog_0: 1074552614955761134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

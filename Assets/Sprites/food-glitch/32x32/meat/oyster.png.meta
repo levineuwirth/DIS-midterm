@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oyster_0: 5862055043589676008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

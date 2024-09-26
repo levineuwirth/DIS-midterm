@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salad_spinach_0: -3016253122960702387
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

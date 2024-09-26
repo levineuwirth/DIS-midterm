@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spaghetti_01_0: 8266857827524179860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

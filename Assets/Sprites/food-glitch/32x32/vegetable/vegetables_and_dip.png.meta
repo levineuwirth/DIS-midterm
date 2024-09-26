@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vegetables_and_dip_0: 6853699410509777696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

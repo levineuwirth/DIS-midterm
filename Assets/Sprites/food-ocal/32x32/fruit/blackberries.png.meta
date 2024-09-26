@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blackberries_0: 8957720166586390491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

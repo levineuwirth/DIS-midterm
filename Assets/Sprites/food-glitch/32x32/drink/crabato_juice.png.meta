@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      crabato_juice_0: -7899920981300039113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

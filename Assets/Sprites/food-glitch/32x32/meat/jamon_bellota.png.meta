@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      jamon_bellota_0: 1464613772067940782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

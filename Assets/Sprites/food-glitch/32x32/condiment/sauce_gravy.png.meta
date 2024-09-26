@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sauce_gravy_0: 1027961375630131775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

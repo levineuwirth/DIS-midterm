@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      raspberries_0: 343430178444821824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

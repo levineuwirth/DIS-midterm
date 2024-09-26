@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rub_trump_0: -7031699746180538102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

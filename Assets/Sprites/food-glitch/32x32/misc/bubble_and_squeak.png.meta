@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubble_and_squeak_0: -2032972382547286710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

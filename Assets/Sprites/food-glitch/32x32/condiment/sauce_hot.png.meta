@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sauce_hot_0: 8529432163357928061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spread_whortleberry_jelly_0: -5135507151314312044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fried_noodles_0: -3180076178537504659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

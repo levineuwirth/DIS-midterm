@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turmeric_0: 2900088562103941667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

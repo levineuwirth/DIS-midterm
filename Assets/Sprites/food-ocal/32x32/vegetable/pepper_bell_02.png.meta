@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pepper_bell_02_0: -8900868589839861881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

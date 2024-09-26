@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      salmon_lox_0: 5948521899492948033
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
