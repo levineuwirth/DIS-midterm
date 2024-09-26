@@ -150,6 +150,14 @@ MonoBehaviour:
   swingTime: 0
   ovenLayerMask:
     serializedVersion: 2
-    m_Bits: 0
-  framesOpen: []
-  framesClose: []
+    m_Bits: 64
+  framesOpen:
+  - {fileID: -7294393051591735570, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: 970971648, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: -1834200170, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: -1801878013, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  framesClose:
+  - {fileID: -1801878013, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: -1834200170, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: 970971648, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
+  - {fileID: -7294393051591735570, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
