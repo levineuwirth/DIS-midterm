@@ -65,6 +65,7 @@ MonoBehaviour:
   <groundLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
+  <itemPosBuffer>k__BackingField: 0
 --- !u!114 &-7940940379797003364
 MonoBehaviour:
   m_ObjectHideFlags: 0
