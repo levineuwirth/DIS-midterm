@@ -31,10 +31,18 @@ public class PlayerItemCollector : MonoBehaviour
         isHoldingItem = false;
     }
 
+    // on press j, spawn a physics overlap circle - check for item overlap
     private void OnTriggerStay2D(Collider2D other) {
+        Debug.Log(other.name);
+        
+        if(other.tag == "Item") {
+            Debug.Log("tagging");
+        }
+
         if(other.tag == "Item" && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
             currentIngredient = other.GetComponent<Item>().ingredientID;
             isHoldingItem = true;
+            Debug.Log("pickedUpItem");
             EOnItemPickUp?.Invoke();
         }
     }
