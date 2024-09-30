@@ -12,7 +12,7 @@ public class ItemSpawner : MonoBehaviour
     public float spawnDuration = 1f;
 
     private Queue<Item> spawns;
-    private GameObject lastSpawnedItem; // Reference to the last spawned item
+    private Item lastSpawnedItem; // Reference to the last spawned item
     private Item currentItem; // The current item, to use when we need to destroy it.
     private bool addBack; // If we should add the item back into the queue.
     void Start()
@@ -36,13 +36,7 @@ public class ItemSpawner : MonoBehaviour
         while (true)
         { // Loop forever. We should have a reference to this from the player or otherwise stop it externally.
           // That stop will occur by destroying the GameObject.
-            // Destroy the last spawned item before spawning a new one
-            if (lastSpawnedItem != null)
-            {
-                Destroy(lastSpawnedItem);
-		if(addBack){
-		    spawns.Enqueue(currentItem);
-		    Debug.Log("DESTROYED");
+           ("DESTROYED");
 		}
                 lastSpawnedItem = null; // Clear the reference after destroying
             }
@@ -53,7 +47,7 @@ public class ItemSpawner : MonoBehaviour
                 Vector3 spawnPosition = this.transform.position;
 		addBack = true;
 		if (currentItem != null && !currentItem.isNone){
-		    lastSpawnedItem = Instantiate(currentItem.gameObject, spawnPosition, Quaternion.identity);
+		    lastSpawnedItem = Instantiate(currentItem, spawnPosition, Quaternion.identity);
 		}
 	    }
                 
