@@ -14,11 +14,8 @@ public class Item : MonoBehaviour {
     public Vector3[] allowedLocations;
 
     // FOR SPECIFIC CONDITIONS ON SPAWNING, e.g. spawning inside the tutorial's oven when it is open,
-    // you MUST make a child class extending Item and implement the functionality on a case by case basis.
+    // you MUST make a child class extending Item and implement the functionality on a case by case basis
 
-    public void onSubmit(){
-	// if it's trash, bad, if it isn't, good!
-	// we may move this logic to the player depending on the final design
-	// (it isn't a priority right now)
+    public void onCollect(){
     }
 }

@@ -13,7 +13,8 @@ public class ItemSpawner : MonoBehaviour
 
     private Queue<Item> spawns;
     private GameObject lastSpawnedItem; // Reference to the last spawned item
-
+    private Item currentItem; // The current item, to use when we need to destroy it.
+    private bool addBack; // If we should add the item back into the queue.
     void Start()
     {
         // Initialize the queue
@@ -27,6 +28,7 @@ public class ItemSpawner : MonoBehaviour
 
         // Start the spawning loop as a coroutine
         StartCoroutine(SpawnItems());
+	Player.EOnItemPickup += () => handleCollection();
     }
 
     IEnumerator SpawnItems()
@@ -43,18 +45,19 @@ public class ItemSpawner : MonoBehaviour
 
             if (spawns.Count > 0)
             {
-                Item currentItem = spawns.Dequeue();
+                currentItem = spawns.Dequeue();
                 Vector3? spawnPosition = GetValidSpawnPosition(currentItem);
-
+		addBack = true;
                 if (currentItem != noneItem && spawnPosition.HasValue)
                 {
                     // Spawn the item and keep a reference to the spawned GameObject
                     lastSpawnedItem = Instantiate(currentItem.gameObject, spawnPosition.Value, Quaternion.identity);
                 }
 
-                spawns.Enqueue(currentItem);
+                if (addBack){
+		    spawns.Enqueue(currentItem);
             }
-
+	    }
             yield return new WaitForSeconds(spawnDuration);
         }
     }
@@ -82,8 +85,9 @@ public class ItemSpawner : MonoBehaviour
         return null;
     }
 
-    void Update()
-    {
-        // Coroutine handles it, nothing here for now!
+    private void handleCollection(){
+	Destroy(currentItem);
+	addBack = false;
     }
+    
 }
