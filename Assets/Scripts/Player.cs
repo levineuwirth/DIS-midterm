@@ -22,13 +22,15 @@ public class Player : MonoBehaviour
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
     [Header("Item Inventory")]
-    [field: SerializeField] public float itemPosBuffer {get ; private set;}
+    private GameObject heldItem;
+    private bool hasItem;
+    public delegate void OnItemPickup();
+    public static event OnItemPickup EOnItemPickup;
 
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
     private ParticleSystem _dust;
     private AudioSource _jumpSound;
-    private List<GameObject> _inventory;
     private bool _isJumpBuffered = false;
     private bool _isJumpRelease = false;
     private bool _jumpCutDone = false;
@@ -40,8 +42,6 @@ public class Player : MonoBehaviour
         _sr = gameObject.GetComponent<SpriteRenderer>();
         _dust = gameObject.GetComponent<ParticleSystem>();
         _jumpSound = gameObject.GetComponent<AudioSource>();
-        _inventory = new List<GameObject>();
-        _inventory.Capacity = 1;
     }
 
     // Update is called once per frame
@@ -71,7 +71,6 @@ public class Player : MonoBehaviour
         Run();
         Jump();
         FastFall();
-        HoldItem();
     }
 
     private void Run() {
@@ -148,24 +147,17 @@ public class Player : MonoBehaviour
         _sr.flipX = PlayerAnimation.Instance.getFlip();
     }
 
-    private void AddItem(GameObject item) {
-        _inventory.Add(item);
-    }
-
-    private void HoldItem() {
-        if(_inventory.Any()) {
-            _inventory.ElementAt(0).transform.position = transform.position + Vector3.up * itemPosBuffer;
+    private void OnTriggerStay2D(Collider2D other) {
+        if (other.tag == "Item" && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
+            if(!hasItem) {
+                addItem(other.gameObject);
+                //trigger event
+                EOnItemPickup?.Invoke();
+            }
         }
     }
 
-    private void ThrowItem() {
-        PlayerAnimation.Instance.playerAnimator.SetTrigger("Throw");
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Item") {
-            AddItem(other.gameObject);
-        }
+    private void addItem(GameObject newItem) {
+        heldItem = newItem;
     }
 }

@@ -65,7 +65,6 @@ MonoBehaviour:
   <groundLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
-  <itemPosBuffer>k__BackingField: 0
 --- !u!114 &6488848736164614522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +92,7 @@ MonoBehaviour:
   <left>k__BackingField: 97
   <right>k__BackingField: 100
   <jump>k__BackingField: 32
-  <throwItem>k__BackingField: 106
+  <pickOrDropItem>k__BackingField: 106
 --- !u!212 &4560960623997436247
 SpriteRenderer:
   m_ObjectHideFlags: 0
