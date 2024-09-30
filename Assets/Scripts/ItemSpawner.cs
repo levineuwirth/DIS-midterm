@@ -42,7 +42,6 @@ public class ItemSpawner : MonoBehaviour
                 Destroy(lastSpawnedItem);
 		if(addBack){
 		    spawns.Enqueue(currentItem);
-		    Debug.Log("DESTROYED");
 		}
                 lastSpawnedItem = null; // Clear the reference after destroying
             }
