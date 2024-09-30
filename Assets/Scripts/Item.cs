@@ -19,6 +19,15 @@ public class Item : MonoBehaviour {
     // FOR SPECIFIC CONDITIONS ON SPAWNING, e.g. spawning inside the tutorial's oven when it is open,
     // you MUST make a child class extending Item and implement the functionality on a case by case basis
 
-    public void onCollect(){
+    public IngredientType ingredientID;
+
+    public enum IngredientType {
+        Apple,
+        Banana,
+        Orange,
+        Strawberry,
+        Blueberry,
+        Pineapple,
+        None
     }
 }

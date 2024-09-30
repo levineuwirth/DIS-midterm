@@ -21,12 +21,6 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
 
-    [Header("Item Inventory")]
-    private GameObject heldItem;
-    private bool hasItem;
-    public delegate void OnItemPickup();
-    public static event OnItemPickup EOnItemPickup;
-
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
     private ParticleSystem _dust;
@@ -145,19 +139,5 @@ public class Player : MonoBehaviour
         }
 
         _sr.flipX = PlayerAnimation.Instance.getFlip();
-    }
-
-    private void OnTriggerStay2D(Collider2D other) {
-        if (other.tag == "Item" && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
-            if(!hasItem) {
-                addItem(other.gameObject);
-                //trigger event
-                EOnItemPickup?.Invoke();
-            }
-        }
-    }
-
-    private void addItem(GameObject newItem) {
-        heldItem = newItem;
     }
 }

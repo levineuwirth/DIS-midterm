@@ -28,7 +28,7 @@ public class ItemSpawner : MonoBehaviour
 
         // Start the spawning loop as a coroutine
         StartCoroutine(SpawnItems());
-	Player.EOnItemPickup += () => handleCollection();
+	    PlayerItemCollector.EOnItemPickUp += () => handleCollection();
     }
 
     IEnumerator SpawnItems()
