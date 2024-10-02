@@ -5,6 +5,10 @@ public class PlayerItemCollector : MonoBehaviour
     
     private bool isHoldingItem;
     private Item.IngredientType currentIngredient;
+
+    public Vector2 pickUpHitboxSize;
+    private LayerMask _itemLayerMask;
+
     public delegate void OnItemDrop(Item.IngredientType currentIngredientType);
     public static OnItemDrop EOnItemDrop;
     public delegate void OnItemPickUp();
@@ -15,11 +19,16 @@ public class PlayerItemCollector : MonoBehaviour
     {
         currentIngredient = Item.IngredientType.None;
         isHoldingItem = false;
+        _itemLayerMask = LayerMask.GetMask("Item");
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
+            pickUpItem();
+        }
+        
         if(isHoldingItem && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
             dropItem();
         }
@@ -32,18 +41,18 @@ public class PlayerItemCollector : MonoBehaviour
     }
 
     // on press j, spawn a physics overlap circle - check for item overlap
-    private void OnTriggerStay2D(Collider2D other) {
-        Debug.Log(other.name);
+    private void pickUpItem() {
+        Collider2D hitItem = Physics2D.OverlapBox(transform.position, pickUpHitboxSize, 0, _itemLayerMask);
         
-        if(other.tag == "Item") {
-            Debug.Log("tagging");
-        }
-
-        if(other.tag == "Item" && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
-            currentIngredient = other.GetComponent<Item>().ingredientID;
+        if(hitItem != null) {
+            currentIngredient = hitItem.GetComponent<Item>().ingredientID;
             isHoldingItem = true;
             Debug.Log("pickedUpItem");
             EOnItemPickUp?.Invoke();
         }
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.DrawWireCube(transform.position, pickUpHitboxSize);
     }
 }

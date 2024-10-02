@@ -12,6 +12,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
+      propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5636785798033918639, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
       propertyPath: m_Size.x
       value: 0.28118324

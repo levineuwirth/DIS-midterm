@@ -7908,6 +7908,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3602711048130665727, guid: 1933f7b9941b045c6859873c4e34966b, type: 3}
+      propertyPath: spawnDistance
+      value: -0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602711048130665727, guid: 1933f7b9941b045c6859873c4e34966b, type: 3}
+      propertyPath: pickUpHitboxSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3602711048130665727, guid: 1933f7b9941b045c6859873c4e34966b, type: 3}
+      propertyPath: pickUpHitboxSize.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4875731779884467290, guid: 1933f7b9941b045c6859873c4e34966b, type: 3}
       propertyPath: m_Size.x
       value: 0.20623744

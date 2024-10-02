@@ -27,4 +27,8 @@ public class Item : MonoBehaviour {
         Pineapple,
         None
     }
+
+    private void Awake() {
+        Debug.Log(ingredientID);
+    }
 }
