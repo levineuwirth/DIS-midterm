@@ -1,0 +1,21 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ItemSlot: MonoBehaviour
+{
+    [Header("Slot-Specific Data")]
+    // The item that is in this slot of the recipe. This needs to be accessed by ItemManager.
+    public Item associatedItem; 
+
+    void Start(){
+    }
+
+    void Update(){
+    }
+
+    void onItemCollect(){
+	
+    }
+}
