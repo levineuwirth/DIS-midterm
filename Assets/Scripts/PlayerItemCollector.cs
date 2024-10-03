@@ -6,13 +6,13 @@ public class PlayerItemCollector : MonoBehaviour
     private bool isHoldingItem;
     private Item.IngredientType _currentIngredientType;
     private Collider2D _nearestIngredient;
-    private GameObject _currentIngredient;
 
     public Vector2 pickUpHitboxSize;
-    public LayerMask _itemLayerMask;
+    public LayerMask itemLayerMask;
+    public LayerMask itemSubmitLayerMask;
 
-    public delegate void OnItemDrop(Item.IngredientType currentIngredientType);
-    public static OnItemDrop EOnItemDrop;
+    public delegate void OnItemSubmit(Item.IngredientType currentIngredientType);
+    public static OnItemSubmit EOnItemSubmit;
     public delegate void OnItemPickUp();
     public static OnItemPickUp EOnItemPickUp;
     
@@ -29,25 +29,29 @@ public class PlayerItemCollector : MonoBehaviour
         checkForItem();
         
         if(isHoldingItem && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
-            Debug.Log("dropitem called");
-            dropItem();
+            Debug.Log("submit item called");
+            submitItem();
         }
         else if(Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
             pickUpItem();
         }
     }
 
-    private void dropItem() {
-        EOnItemDrop?.Invoke(_currentIngredientType);
-        Instantiate(_currentIngredient, transform.position, Quaternion.identity);
-        _currentIngredientType = Item.IngredientType.None;
-        isHoldingItem = false;
+    private void submitItem() {
+        Collider2D inItemSubmitter = Physics2D.OverlapBox(transform.position, pickUpHitboxSize, 0, itemSubmitLayerMask);
+
+        if(inItemSubmitter != null) {
+            EOnItemSubmit?.Invoke(_currentIngredientType);
+            _currentIngredientType = Item.IngredientType.None;
+            isHoldingItem = false;
+        }
     }
 
     private void checkForItem() {
-        _nearestIngredient = Physics2D.OverlapBox(transform.position, pickUpHitboxSize, 0, _itemLayerMask);
+        _nearestIngredient = Physics2D.OverlapBox(transform.position, pickUpHitboxSize, 0, itemLayerMask);
 
         if(_nearestIngredient != null) {
+            Debug.Log(_nearestIngredient.gameObject.GetComponent<Item>().ingredientID);
             // Invoke event to have popUp
         }
     }
@@ -56,7 +60,6 @@ public class PlayerItemCollector : MonoBehaviour
     private void pickUpItem() {
         if(_nearestIngredient != null) {
             _currentIngredientType = _nearestIngredient.GetComponent<Item>().ingredientID;
-            _currentIngredient = _nearestIngredient.gameObject;
             isHoldingItem = true;
 
             Debug.Log("pickedUpItem");

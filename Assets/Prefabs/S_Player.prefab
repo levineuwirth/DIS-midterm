@@ -46,6 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpHitboxSize: {x: 0, y: 0}
+  itemLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  itemSubmitLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &4875731779884467290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -103,6 +109,7 @@ GameObject:
   - component: {fileID: 2027924026650633725}
   - component: {fileID: 4723754644692655649}
   - component: {fileID: 6647264670092074569}
+  - component: {fileID: 6511298174832241273}
   - component: {fileID: 6488848736164614522}
   - component: {fileID: 6973153422045914360}
   - component: {fileID: 4560960623997436247}
@@ -173,6 +180,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <maxHealth>k__BackingField: 5
   <healthBar>k__BackingField: {fileID: 0}
+--- !u!114 &6511298174832241273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5394627400516091548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d85f749c77344e3b52e76435c0d458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickUpHitboxSize: {x: 1, y: 2}
+  itemLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  itemSubmitLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &6488848736164614522
 MonoBehaviour:
   m_ObjectHideFlags: 0

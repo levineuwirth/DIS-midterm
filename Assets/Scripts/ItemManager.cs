@@ -14,7 +14,7 @@ public class ItemManager : MonoBehaviour
     {
         recipe = new List<Item.IngredientType>();
 	slots = new List<ItemSlot>();
-        PlayerItemCollector.EOnItemDrop += checkItemOnRecipe;
+        PlayerItemCollector.EOnItemSubmit += checkItemOnRecipe;
 	int i = 0;
 	foreach (ItemSlot slot in slots){
 	    slot.associatedItem = itemSprites[i];
@@ -41,6 +41,6 @@ public class ItemManager : MonoBehaviour
     }
 
     private void OnDestroy() {
-        PlayerItemCollector.EOnItemDrop -= checkItemOnRecipe;
+        PlayerItemCollector.EOnItemSubmit -= checkItemOnRecipe;
     }
  }
