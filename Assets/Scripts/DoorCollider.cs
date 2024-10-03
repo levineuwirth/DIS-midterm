@@ -18,8 +18,9 @@ public class DoorCollider : MonoBehaviour
         
     }
 
-    public void setDoorTrigger(bool triggerCheck)
+    public void SetDoorTrigger(bool triggerCheck)
     {
+        boxCollider = gameObject.GetComponent<BoxCollider2D>();
         boxCollider.isTrigger = triggerCheck;
     }
 
