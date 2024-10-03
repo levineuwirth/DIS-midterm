@@ -7,6 +7,8 @@ public class ItemManager : MonoBehaviour
 
     [field: SerializeField] public List<Item.IngredientType> recipe {get ; private set;}
     [field: SerializeField] public List<ItemSlot> slots {get; private set;}
+    [field: SerializeField] public List<Sprite> itemSprites {get; private set;}
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -15,7 +17,7 @@ public class ItemManager : MonoBehaviour
         PlayerItemCollector.EOnItemDrop += checkItemOnRecipe;
 	int i = 0;
 	foreach (ItemSlot slot in slots){
-	    slot.associatedItem = recipe[i];
+	    slot.associatedItem = itemSprites[i];
 	    i++;
     }
     }

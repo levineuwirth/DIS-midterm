@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6c195ab79b0ac6db83987c87dc23f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedItem: 0
+  associatedItem: {fileID: 0}
   notCollectedImage: {fileID: 1711480110253230093, guid: 0edd8f25c92604e69af4d9caff3ed26b, type: 3}
   collectedImage: {fileID: -8592390932768213993, guid: 0edd8f25c92604e69af4d9caff3ed26b, type: 3}
