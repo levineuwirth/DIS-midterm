@@ -22,9 +22,9 @@ public class Item : MonoBehaviour {
         Apple,
         Banana,
         Orange,
-        Strawberry,
-        Blueberry,
-        Pineapple,
+        Butter,
+        Bread,
+        Cheese,
         None
     }
 
