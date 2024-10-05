@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6874378452066660275}
   - component: {fileID: 7899446688871468147}
-  - component: {fileID: 569208606069811787}
-  m_Layer: 0
+  - component: {fileID: -5417426331357057114}
+  m_Layer: 5
   m_Name: ItemVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &569208606069811787
+--- !u!114 &-5417426331357057114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,6 +97,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7339652746917298924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10647a5ce25f98c37a4d0682be1805d2, type: 3}
+  m_Script: {fileID: 11500000, guid: a4cf35f709dd634eb9e42619babad2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  renderer: {fileID: 7899446688871468147}
+  itemSprite: {fileID: 0}

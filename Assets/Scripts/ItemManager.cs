@@ -5,19 +5,18 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
 
-    [field: SerializeField] public List<Item.IngredientType> recipe {get ; private set;}
-    [field: SerializeField] public List<ItemSlot> slots {get; private set;}
-    [field: SerializeField] public List<Sprite> itemSprites {get; private set;}
+    public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
+	public List<ItemSlot> slots = new List<ItemSlot>();
+	public List<Sprite> itemSprites = new List<Sprite>();
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        recipe = new List<Item.IngredientType>();
-	slots = new List<ItemSlot>();
         PlayerItemCollector.EOnItemSubmit += checkItemOnRecipe;
 	int i = 0;
 	foreach (ItemSlot slot in slots){
 	    slot.associatedItem = itemSprites[i];
+	    slot.setItemSprite();
 	    i++;
     }
     }
