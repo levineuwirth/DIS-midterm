@@ -41,24 +41,28 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
+        if(!PauseMenu.isGamePaused && !PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
+            PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
 
-        _moveInput = Input.GetAxisRaw("HorizontalWASD");
+            _moveInput = Input.GetAxisRaw("HorizontalWASD");
 
-        flipSprite();
+            flipSprite();
 
-        if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
-            _isJumpBuffered = true;
-            _jumpCutDone = false;
-        }
-        
-        if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone) {
-            _isJumpRelease = true;
+            if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
+                _isJumpBuffered = true;
+                _jumpCutDone = false;
+            }
+            
+            if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone) {
+                _isJumpRelease = true;
+            }
         }
     }
 
     private void FixedUpdate() {
-        movePlayer();
+        if(!PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
+            movePlayer();
+        }
     }
 
     private void movePlayer() {

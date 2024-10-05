@@ -22,8 +22,10 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        updateRun();
-        checkFlip();
+        if(!PauseMenu.isGamePaused && !playerAnimator.GetBool("Dead")) {
+            updateRun();
+            checkFlip();
+        }
     }
 
     private void updateRun() {
