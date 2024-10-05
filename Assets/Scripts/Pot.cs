@@ -12,9 +12,12 @@ public class Pot : MonoBehaviour
     public Sprite[] framesClose;
     public Animator potAnimator { get; private set; }
     public GameObject bubblePrefab;
+    public DoorCollider doorCollider;
+    public GameObject waterPrefab;
 
     private AnimatorClipInfo[] CurrentClipInfo;
     private float shotDelay = 0.5f;
+    private int shotType;
 
 
     //private SpriteRenderer spriteRenderer;
@@ -35,21 +38,45 @@ public class Pot : MonoBehaviour
         CurrentClipInfo = this.potAnimator.GetCurrentAnimatorClipInfo(0);
         Debug.Log(CurrentClipInfo[0].clip.name);
         shotDelay -= Time.deltaTime;
-        if (CurrentClipInfo[0].clip.name == "PotClose" && shotDelay <= 0 || CurrentClipInfo[0].clip.name == "PotCloseIdle" && shotDelay <= 0)
+        if (CurrentClipInfo[0].clip.name == "PotClose" || CurrentClipInfo[0].clip.name == "PotCloseIdle")
         {
-            ShootBubble();
-            shotDelay = 0.5f;
+            Debug.Log("right clip");
+            if (shotType == 1)
+            {
+                if (shotDelay <= 0)
+                {
+                    ShootBubbleRand();
+                    shotDelay = 0.5f;
+                }
+            }
+            else if (shotType == 2)
+            {
+                Debug.Log("right shot type");
+                if (shotDelay <= 0)
+                {
+                    Debug.Log("shot delay over");
+                    ShootWater();
+                    shotDelay = 0.5f;
+                }
+            }
         }
     }
 
-    void ShootBubble()
+    void ShootBubbleRand()
     {
         Instantiate(bubblePrefab, transform.position, Quaternion.identity);
 
     }
 
+    void ShootWater()
+    {
+        Instantiate(waterPrefab, transform.position, Quaternion.identity);
+
+    }
+
     private IEnumerator AnimOpen()
     {
+        shotType = Random.Range(2, 3);
         float waitForOpen = 2;
         yield return new WaitForSeconds(waitForOpen);
         potAnimator.SetBool("PotWait", false);

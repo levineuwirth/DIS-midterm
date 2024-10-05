@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Item
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Projectiles
+    uniqueID: 3883077175
+    locked: 0
+  - name: 'Level '
+    uniqueID: 2245998561
     locked: 0
   m_RenderingLayers:
   - Default

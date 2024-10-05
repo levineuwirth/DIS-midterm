@@ -12,16 +12,10 @@ public class DoorCollider : MonoBehaviour
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
     }
 
-    // Update is called once per frame
+    // Update is called once per frame 
     void Update()
     {
         
-    }
-
-    public void SetDoorTrigger(bool triggerCheck)
-    {
-        boxCollider = gameObject.GetComponent<BoxCollider2D>();
-        boxCollider.isTrigger = triggerCheck;
     }
 
     private void ReloadScene()
@@ -29,8 +23,8 @@ public class DoorCollider : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /**private void OnTriggerEnter2D(Collider2D collision)
     {
-        ReloadScene();
     }
+    **/
 }

@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2048968735
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 8200443108533574130, guid: 5f63863cc1a394c5d96a171fac67fe31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,6 +108,7 @@ MonoBehaviour:
   framesOpen: []
   framesClose: []
   bubblePrefab: {fileID: 0}
+  doorCollider: {fileID: 0}
 --- !u!95 &9193263801320734431
 Animator:
   serializedVersion: 7

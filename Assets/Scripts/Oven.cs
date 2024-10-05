@@ -15,10 +15,12 @@ public class Oven : MonoBehaviour
     public GameObject fireballPrefab;
 
     private bool shootReady;
+    private int counter;
 
     private AnimatorClipInfo[] CurrentClipInfo;
 
-    private float shotDelay = 1.5f;
+    private float shotDelayWall = 1.5f;
+    private float shotDelayZag = 0.5f;
     private int shotType;
 
 
@@ -32,24 +34,42 @@ public class Oven : MonoBehaviour
         ovenAnimator = gameObject.GetComponent<Animator>();
         ovenAnimator.SetBool("OvenWait", true);
         StartCoroutine(AnimOpen());
+        counter = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
         CurrentClipInfo = this.ovenAnimator.GetCurrentAnimatorClipInfo(0);
-        shotDelay -= Time.deltaTime;
-        if (CurrentClipInfo[0].clip.name == "OvenIdleOpen" && shotDelay <= 0 || CurrentClipInfo[0].clip.name == "OvenOpen" && shotDelay <= 0)
+        shotDelayWall -= Time.deltaTime;
+        shotDelayZag -= Time.deltaTime;
+        if(CurrentClipInfo[0].clip.name == "OvenIdleOpen" || CurrentClipInfo[0].clip.name == "OvenOpen")
         {
+            Debug.Log("right clip");
             if(shotType == 1)
             {
-                ShootFirewall();
+                if(shotDelayWall <= 0)
+                {
+                    ShootFirewall();
+                    shotDelayWall = 1.5f;
+                }
             }
             else if(shotType == 2)
             {
-                ShootZigZag();
+                Debug.Log("right shot type");
+                if(shotDelayZag <= 0){
+                    Debug.Log("shot delay over");
+                    ShootZigZag(counter);
+                    counter++;
+                    if (counter == 6)
+                    {
+                        Debug.Log("counter reset");
+                        counter = 1;
+                    }
+                    shotDelayZag = 0.5f;
+                }
             }
-            shotDelay = 1.5f;
+            Debug.Log("shot delay reset");
         }
 
     }
@@ -67,17 +87,12 @@ public class Oven : MonoBehaviour
 
     }
 
-    void ShootZigZag()
+    void ShootZigZag(int counter)
     {
         float spacingY = 1.5f;
         float spacingX = 4f;
 
-        Instantiate(fireballPrefab, transform.position + new Vector3(2 * spacingX, -2 * spacingY, 0), Quaternion.identity);
-        Instantiate(fireballPrefab, transform.position + new Vector3(spacingX, -spacingY, 0), Quaternion.identity);
-        Instantiate(fireballPrefab, transform.position, Quaternion.identity);
-        Instantiate(fireballPrefab, transform.position + new Vector3(-spacingX, spacingY, 0), Quaternion.identity);
-        Instantiate(fireballPrefab, transform.position + new Vector3(-2 * spacingX, 2 * spacingY, 0), Quaternion.identity);
-        Instantiate(fireballPrefab, transform.position + new Vector3(-3 * spacingX, 3 * spacingY, 0), Quaternion.identity);
+        Instantiate(fireballPrefab, transform.position + new Vector3(counter * spacingX - 4, counter * spacingY - 4, 0), Quaternion.identity);
 
     }
 
@@ -85,7 +100,7 @@ public class Oven : MonoBehaviour
     private IEnumerator AnimOpen()
     {
         shotType = Random.Range(1, 3);
-        float waitForOpen = 1;
+        float waitForOpen = 1f;
         yield return new WaitForSeconds(waitForOpen);
         ovenAnimator.SetBool("OvenWait", false);
         StartCoroutine(AnimClose());

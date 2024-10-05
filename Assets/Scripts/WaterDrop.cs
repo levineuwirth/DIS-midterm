@@ -1,10 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class Bubble : MonoBehaviour
+public class WaterDrop : MonoBehaviour
 {
 
-	public float speed = 5;
+	public float speed = 1;
 	public float lifeTime = 3;
 	public Vector2 direction;
 

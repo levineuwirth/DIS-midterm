@@ -269,15 +269,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5927425620543034905, guid: ef52154f4ead648cb8499443b83046be, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
-      value: 0.75682175
+      value: 0.7447123
       objectReference: {fileID: 0}
     - target: {fileID: -5927425620543034905, guid: ef52154f4ead648cb8499443b83046be, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.34780923
+      value: 0.39312512
       objectReference: {fileID: 0}
     - target: {fileID: -5927425620543034905, guid: ef52154f4ead648cb8499443b83046be, type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
-      value: 0.01
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093584472993818730, guid: ef52154f4ead648cb8499443b83046be, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093584472993818730, guid: ef52154f4ead648cb8499443b83046be, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2048968735
       objectReference: {fileID: 0}
     - target: {fileID: 3968671473389792581, guid: ef52154f4ead648cb8499443b83046be, type: 3}
       propertyPath: fireballPrefab
