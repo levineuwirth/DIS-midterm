@@ -26,12 +26,10 @@ public class ItemSlot: MonoBehaviour
     public void setItemSprite(){
     Debug.Log("Begin instantiation process.");
     
-    // Instantiate a new itemVisualization instance
-    GameObject newItemVisualization = Instantiate(itemVisualization, transform.position, Quaternion.identity);
-
-    // Try to find the ItemVisualization component in the children of the instantiated object
+    GameObject newItemVisualization = Instantiate(itemVisualization, transform);
+    newItemVisualization.transform.localPosition = Vector3.zero;
     iz = newItemVisualization.GetComponentInChildren<ItemVisualization>();
-
+    
     if (iz != null) {
         iz.setSprite(associatedItem);
         Debug.Log("ItemVisualization instance created and sprite set.");
