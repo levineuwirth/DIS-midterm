@@ -76,7 +76,7 @@ public class Pot : MonoBehaviour
 
     private IEnumerator AnimOpen()
     {
-        shotType = Random.Range(2, 3);
+        shotType = Random.Range(1, 3);
         float waitForOpen = 2;
         yield return new WaitForSeconds(waitForOpen);
         potAnimator.SetBool("PotWait", false);
