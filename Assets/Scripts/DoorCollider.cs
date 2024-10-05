@@ -10,21 +10,29 @@ public class DoorCollider : MonoBehaviour
     void Start()
     {
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
+        boxCollider.enabled = false;
+	boxCollider.isTrigger = false;
     }
 
-    // Update is called once per frame 
-    void Update()
+    void OnEnable()
     {
-        
+	ItemManager.EOnRecipeComplete += EnableCollider;
+    }
+
+    void OnDisable()
+    {
+        ItemManager.EOnRecipeComplete -= EnableCollider;
+    }
+
+    private void EnableCollider()
+    {
+        Debug.Log("Recipe complete! Enabling door collider.");
+        boxCollider.enabled = true;
+	boxCollider.isTrigger = true;
     }
 
     private void ReloadScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
-    /**private void OnTriggerEnter2D(Collider2D collision)
-    {
-    }
-    **/
 }

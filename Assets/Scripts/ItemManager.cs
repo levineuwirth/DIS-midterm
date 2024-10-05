@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-
-    public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
+        public static event Action EOnRecipeComplete;
+        public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
 	public List<ItemSlot> slots = new List<ItemSlot>();
 	public List<Sprite> itemSprites = new List<Sprite>();
     
@@ -33,6 +33,13 @@ public class ItemManager : MonoBehaviour
 	    recipe.Remove(ingredient);
             Debug.Log("removed");
 	    slots[index].onItemCollect();
+
+	     if (recipe.Count == 0)
+            {
+                Debug.Log("Recipe is complete.");
+                EOnRecipeComplete?.Invoke();
+            }
+	     
         } else {
 	    // deal damage?
 	    // punishment here
