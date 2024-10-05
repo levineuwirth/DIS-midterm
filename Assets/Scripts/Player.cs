@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     {
         PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
 
-        _moveInput = Input.GetAxisRaw("Horizontal");
+        _moveInput = Input.GetAxisRaw("HorizontalWASD");
 
         flipSprite();
 
