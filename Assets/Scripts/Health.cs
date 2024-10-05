@@ -32,4 +32,15 @@ public class Health : MonoBehaviour
         _currentHealth -= damage;
         healthBar.SetHealth(_currentHealth);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Projectile"))
+        {
+            takeDamage(1); 
+            Debug.Log("Player hit by a projectile, taking damage.");
+
+            Destroy(collision.gameObject);
+        }
+    }
 }
