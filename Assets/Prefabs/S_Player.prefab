@@ -62,11 +62,12 @@ MonoBehaviour:
   <frictionAmount>k__BackingField: 0.22
   jumpForce: 31
   <downwardForce>k__BackingField: 40
-  <boxSize>k__BackingField: {x: 1, y: 0.25}
+  <boxSize>k__BackingField: {x: 0.75, y: 0.25}
   <castDistance>k__BackingField: 0.9
   <groundLayer>k__BackingField:
     serializedVersion: 2
     m_Bits: 8
+  <postDeathTimer>k__BackingField: 0
 --- !u!114 &6647264670092074569
 MonoBehaviour:
   m_ObjectHideFlags: 0
