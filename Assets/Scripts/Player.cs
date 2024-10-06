@@ -116,7 +116,6 @@ public class Player : MonoBehaviour
         if(_rb.linearVelocityY < 0) {
             _rb.AddForce(Vector2.down * downwardForce * _rb.mass, ForceMode2D.Force);
         }
-        //TODO: Clamp?
     }
 
     private void ApplyFriction(float targetSpeed) {
@@ -155,6 +154,6 @@ public class Player : MonoBehaviour
     }
 
     private void KillPlayer() {
-        SceneController.instance.LoadScene(SceneManager.GetActiveScene().name);
+        SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

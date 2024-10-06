@@ -43,7 +43,7 @@ public class ItemManager : MonoBehaviour
         } else {
 	    // deal damage?
 	    // punishment here
-	}
+	    }
     }
 
     private void OnDestroy() {

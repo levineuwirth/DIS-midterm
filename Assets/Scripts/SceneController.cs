@@ -1,11 +1,11 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
     public static SceneController instance;
-
     private void Awake() {
         if(instance == null) {
             instance = this;
@@ -19,8 +19,8 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void LoadScene(string sceneName) {
-        SceneManager.LoadSceneAsync(sceneName);
+    public void LoadScene(int buildIndex) {
+        SceneManager.LoadSceneAsync(buildIndex);
     }
     public void QuitApp() {
         Application.Quit();

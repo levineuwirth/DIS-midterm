@@ -152,7 +152,6 @@ MonoBehaviour:
   ovenLayerMask:
     serializedVersion: 2
     m_Bits: 1
-  doorCollider: {fileID: 5270125219980746023, guid: d0d58d8baeeac459893f24502c485376, type: 3}
   fireballPrefab: {fileID: 2029023430850002957, guid: ac329edf9f0c64df5ab87d8a99883356, type: 3}
 --- !u!95 &5237536862985827809
 Animator:
