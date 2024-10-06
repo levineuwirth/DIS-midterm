@@ -1,5 +1,6 @@
 using System;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
@@ -22,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!PauseMenu.isGamePaused && !playerAnimator.GetBool("Dead")) {
+        if(!MenuController.isGamePaused && !playerAnimator.GetBool("Dead")) {
             updateRun();
             checkFlip();
         }

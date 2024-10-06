@@ -4,8 +4,8 @@ using System.Collections;
 public class WaterDrop : MonoBehaviour
 {
 
-	public float speed = 1;
-	public float lifeTime = 3;
+	public float speed ;
+	public float lifeTime;
 	public Vector2 direction;
 
 	void Start()
@@ -18,7 +18,12 @@ public class WaterDrop : MonoBehaviour
 
 	void Update()
 	{
+		lifeTime -= Time.deltaTime;
 		transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
+
+		if(lifeTime < 0) {
+			Destroy(this.gameObject);
+		}
 	}
 
 	/**

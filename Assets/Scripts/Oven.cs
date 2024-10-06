@@ -8,8 +8,6 @@ public class Oven : MonoBehaviour
 {
     public float swingTime;
     public LayerMask ovenLayerMask;
-    public Sprite[] framesOpen;
-    public Sprite[] framesClose;
     public Animator ovenAnimator { get; private set; }
     public DoorCollider doorCollider;
     public GameObject fireballPrefab;
@@ -100,7 +98,7 @@ public class Oven : MonoBehaviour
     private IEnumerator AnimOpen()
     {
         shotType = Random.Range(1, 3);
-        float waitForOpen = 1f;
+        float waitForOpen = 3f;
         yield return new WaitForSeconds(waitForOpen);
         ovenAnimator.SetBool("OvenWait", false);
         StartCoroutine(AnimClose());
@@ -110,7 +108,7 @@ public class Oven : MonoBehaviour
     private IEnumerator AnimClose()
     {
         ovenAnimator.SetBool("OvenWait", true);
-        float waitForOpen = 10;
+        float waitForOpen = 3f;
         yield return new WaitForSeconds(waitForOpen);
         ovenAnimator.SetBool("OvenWait", false);
         StartCoroutine(AnimOpen());

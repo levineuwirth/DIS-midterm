@@ -8,15 +8,13 @@ public class Pot : MonoBehaviour
 {
     public float swingTime;
     public LayerMask potLayerMask;
-    public Sprite[] framesOpen;
-    public Sprite[] framesClose;
     public Animator potAnimator { get; private set; }
     public GameObject bubblePrefab;
     public DoorCollider doorCollider;
     public GameObject waterPrefab;
 
     private AnimatorClipInfo[] CurrentClipInfo;
-    private float shotDelay = 0.5f;
+    private float shotDelay = 0.3f;
     private int shotType;
 
 
@@ -26,7 +24,7 @@ public class Pot : MonoBehaviour
     void Start()
     {
         //spriteRenderer = GetComponent<SpriteRenderer>();
-        swingTime = Random.Range(1f, 5f);
+        swingTime = Random.Range(0.5f, 1.5f);
         potAnimator = gameObject.GetComponent<Animator>();
         potAnimator.SetBool("PotWait", true);
         StartCoroutine(AnimOpen());
@@ -46,7 +44,7 @@ public class Pot : MonoBehaviour
                 if (shotDelay <= 0)
                 {
                     ShootBubbleRand();
-                    shotDelay = 0.5f;
+                    shotDelay = 0.3f;
                 }
             }
             else if (shotType == 2)
@@ -56,7 +54,7 @@ public class Pot : MonoBehaviour
                 {
                     Debug.Log("shot delay over");
                     ShootWater();
-                    shotDelay = 0.5f;
+                    shotDelay = 0.3f;
                 }
             }
         }
@@ -77,7 +75,7 @@ public class Pot : MonoBehaviour
     private IEnumerator AnimOpen()
     {
         shotType = Random.Range(1, 3);
-        float waitForOpen = 2;
+        float waitForOpen = 3;
         yield return new WaitForSeconds(waitForOpen);
         potAnimator.SetBool("PotWait", false);
         StartCoroutine(AnimClose());
@@ -87,7 +85,7 @@ public class Pot : MonoBehaviour
     private IEnumerator AnimClose()
     {
         potAnimator.SetBool("PotWait", true);
-        float waitForOpen = 10;
+        float waitForOpen = 3;
         yield return new WaitForSeconds(waitForOpen);
         potAnimator.SetBool("PotWait", false);
         StartCoroutine(AnimOpen());

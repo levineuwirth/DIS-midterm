@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem.Controls;
 
 public class Bubble : MonoBehaviour
 {
 
-	public float speed = 5;
-	public float lifeTime = 3;
+	public float speed;
+	public float lifeTime;
 	public Vector2 direction;
 
 	void Start()
@@ -18,6 +19,10 @@ public class Bubble : MonoBehaviour
 
 	void Update()
 	{
+		lifeTime -= Time.deltaTime;
+		if(lifeTime < 0) {
+			Destroy(this.gameObject);
+		}
 		transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
 	}
 

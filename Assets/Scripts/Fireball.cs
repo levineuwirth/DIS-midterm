@@ -4,8 +4,8 @@ using System.Collections;
 public class Fireball : MonoBehaviour
 {
 
-	public float speed = 2;
-	public float lifeTime = 3;
+	public float speed;
+	public float lifeTime;
 	public Vector2 direction = new Vector2(-1, 0);
 
 	void Start()
@@ -18,6 +18,11 @@ public class Fireball : MonoBehaviour
 	void Update()
 	{
 		transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
+		
+		lifeTime -= Time.deltaTime;
+		if(lifeTime < 0) {
+			Destroy(this.gameObject);
+		}
 	}
 
 /**

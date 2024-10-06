@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class Player : MonoBehaviour
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
     [field: SerializeField] public float castDistance {get ; private set;}
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
+    [field: SerializeField] public float postDeathTimer {get ; private set;}
 
     private Rigidbody2D _rb;
     private SpriteRenderer _sr;
@@ -41,7 +44,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!PauseMenu.isGamePaused && !PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
+        if(!MenuController.isGamePaused && !PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
             PlayerAnimation.Instance.playerAnimator.SetBool("isGrounded", isGrounded());
 
             _moveInput = Input.GetAxisRaw("HorizontalWASD");
@@ -55,6 +58,12 @@ public class Player : MonoBehaviour
             
             if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone) {
                 _isJumpRelease = true;
+            }
+        }
+        else if(PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
+            postDeathTimer -= Time.deltaTime;
+            if(postDeathTimer < 0) {
+                KillPlayer();
             }
         }
     }
@@ -143,5 +152,9 @@ public class Player : MonoBehaviour
         }
 
         _sr.flipX = PlayerAnimation.Instance.getFlip();
+    }
+
+    private void KillPlayer() {
+        SceneController.instance.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

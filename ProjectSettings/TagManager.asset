@@ -41,14 +41,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: Background
+    uniqueID: 2885460747
+    locked: 0
+  - name: 'Level '
+    uniqueID: 2245998561
     locked: 0
   - name: Projectiles
     uniqueID: 3883077175
     locked: 0
-  - name: 'Level '
-    uniqueID: 2245998561
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: UI
     uniqueID: 3494739775
