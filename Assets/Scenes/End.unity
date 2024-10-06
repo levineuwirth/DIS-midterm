@@ -637,6 +637,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Framework
       objectReference: {fileID: 0}
+    - target: {fileID: 7269910151323363129, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269910151323363129, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 7874970169593126234, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

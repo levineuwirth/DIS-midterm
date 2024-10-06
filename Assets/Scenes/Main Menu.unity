@@ -663,7 +663,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1112,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3199929869283434245, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3199929869283434245, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1148,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3199929869283434245, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -75
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 3199929869283434245, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1169,6 +1169,14 @@ PrefabInstance:
     - target: {fileID: 6371864639822771727, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_text
       value: Food Fight!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371864639822771727, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_fontSize
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6371864639822771727, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
