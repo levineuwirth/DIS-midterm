@@ -33,11 +33,11 @@ public class Pot : MonoBehaviour
     void Update()
     {
         CurrentClipInfo = this.potAnimator.GetCurrentAnimatorClipInfo(0);
-        Debug.Log(CurrentClipInfo[0].clip.name);
+        // Debug.Log(CurrentClipInfo[0].clip.name);
         shotDelay -= Time.deltaTime;
         if (CurrentClipInfo[0].clip.name == "PotClose" || CurrentClipInfo[0].clip.name == "PotCloseIdle")
         {
-            Debug.Log("right clip");
+            // Debug.Log("right clip");
             if (shotType == 1)
             {
                 if (shotDelay <= 0)
@@ -48,10 +48,10 @@ public class Pot : MonoBehaviour
             }
             else if (shotType == 2)
             {
-                Debug.Log("right shot type");
+                // Debug.Log("right shot type");
                 if (shotDelay <= 0)
                 {
-                    Debug.Log("shot delay over");
+                    // Debug.Log("shot delay over");
                     ShootWater();
                     shotDelay = 0.3f;
                 }

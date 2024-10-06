@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEditor;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,6 +38,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        Health.EOnDamageTaken += () => InvulnerabilityBlink();
         _rb = gameObject.GetComponent<Rigidbody2D>();
         _sr = gameObject.GetComponent<SpriteRenderer>();
         _dust = gameObject.GetComponent<ParticleSystem>();
@@ -155,5 +159,23 @@ public class Player : MonoBehaviour
 
     private void KillPlayer() {
         SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void InvulnerabilityBlink() {
+        Debug.Log("Invulnerability Event Detected");
+        StartCoroutine(BlinkSprite());
+    }
+
+    IEnumerator BlinkSprite() {
+        
+        _sr.color = Color.gray;
+
+        yield return new WaitForSeconds(1.5f);
+
+        _sr.color = Color.white;
+    }
+
+    private void OnDestroy() {
+        Health.EOnDamageTaken -= () => InvulnerabilityBlink();
     }
 }

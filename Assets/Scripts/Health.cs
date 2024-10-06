@@ -5,20 +5,26 @@ public class Health : MonoBehaviour
     
     [field: SerializeField] public int maxHealth {get ; private set;}
     [field: SerializeField] public HealthBar healthBar {get ; private set;}
+    [field: SerializeField] public AudioSource damageSFX {get ; private set;}
+    [field: SerializeField] public float setInvulnerabilityDuration {get ; private set;}
+    public delegate void OnDamageTaken();
+    public static OnDamageTaken EOnDamageTaken;
     private int _currentHealth;
-
-    // TODO: trigger event for taking damage for UI
+    private float invulnerabilityDuration;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        invulnerabilityDuration = setInvulnerabilityDuration;
     }
 
     // Update is called once per frame
     void Update()
     {
+        invulnerabilityDuration -= Time.deltaTime;
+
         if(Input.GetKeyDown(KeyCode.Backspace)) {
             takeDamage(1);
         }
@@ -29,8 +35,13 @@ public class Health : MonoBehaviour
     }
 
     private void takeDamage(int damage) {
-        _currentHealth -= damage;
-        healthBar.SetHealth(_currentHealth);
+        if(invulnerabilityDuration < 0) {
+            _currentHealth -= damage;
+            healthBar.SetHealth(_currentHealth);
+            damageSFX.Play();
+            invulnerabilityDuration = setInvulnerabilityDuration;
+            EOnDamageTaken?.Invoke();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -38,9 +49,11 @@ public class Health : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             takeDamage(1); 
-            Debug.Log("Player hit by a projectile, taking damage.");
-
+            // Debug.Log("Player hit by a projectile, taking damage.");
             Destroy(collision.gameObject);
+        }
+        else if(collision.gameObject.CompareTag("Boss")){
+            takeDamage(1); 
         }
     }
 }

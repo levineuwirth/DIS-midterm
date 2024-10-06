@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4404356902848412360}
   m_Layer: 0
   m_Name: Pot
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   bubblePrefab: {fileID: 7214620673391272793, guid: b37512c902514469a852f0ed643cd1d0, type: 3}
-  doorCollider: {fileID: 0}
   waterPrefab: {fileID: 2549499456637363593, guid: 25b85d641df1d440aab43ff2743e0d4c, type: 3}
 --- !u!95 &9193263801320734431
 Animator:

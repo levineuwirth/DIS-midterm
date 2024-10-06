@@ -1,0 +1,3198 @@
+fileFormatVersion: 2
+guid: faca378d77a62458c8c45e716fdc0c02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6276746179915226659
+    second: food-Glitch_0
+  - first:
+      213: 648038513236502132
+    second: food-Glitch_1
+  - first:
+      213: 370752389814724660
+    second: food-Glitch_2
+  - first:
+      213: 7890161591358811184
+    second: food-Glitch_3
+  - first:
+      213: -6181052565987947964
+    second: food-Glitch_4
+  - first:
+      213: -6190190066343845852
+    second: food-Glitch_5
+  - first:
+      213: 3904573301156765660
+    second: food-Glitch_6
+  - first:
+      213: 5394501663182708322
+    second: food-Glitch_7
+  - first:
+      213: -5705589024457698738
+    second: food-Glitch_8
+  - first:
+      213: -1519296880333365358
+    second: food-Glitch_9
+  - first:
+      213: 5185471376779642634
+    second: food-Glitch_10
+  - first:
+      213: 1053729700096881008
+    second: food-Glitch_11
+  - first:
+      213: 1741082855032058824
+    second: food-Glitch_12
+  - first:
+      213: -418627205739430812
+    second: food-Glitch_13
+  - first:
+      213: 621754636949638598
+    second: food-Glitch_14
+  - first:
+      213: 8445289112904064423
+    second: food-Glitch_15
+  - first:
+      213: 4095494747705835563
+    second: food-Glitch_16
+  - first:
+      213: -624060948235098894
+    second: food-Glitch_17
+  - first:
+      213: -4189231067040109351
+    second: food-Glitch_18
+  - first:
+      213: 3203050338194882893
+    second: food-Glitch_19
+  - first:
+      213: -3355647771509035494
+    second: food-Glitch_20
+  - first:
+      213: 4404343781585951987
+    second: food-Glitch_21
+  - first:
+      213: -3598196205614471203
+    second: food-Glitch_22
+  - first:
+      213: -8400087121511284408
+    second: food-Glitch_23
+  - first:
+      213: -856080272231253844
+    second: food-Glitch_24
+  - first:
+      213: 5955054745462097874
+    second: food-Glitch_25
+  - first:
+      213: 2305424936492389403
+    second: food-Glitch_26
+  - first:
+      213: 6190920311093998260
+    second: food-Glitch_27
+  - first:
+      213: -2726404042819061453
+    second: food-Glitch_28
+  - first:
+      213: -1449173829976428057
+    second: food-Glitch_29
+  - first:
+      213: 7347272764547580578
+    second: food-Glitch_30
+  - first:
+      213: 62319716998676316
+    second: food-Glitch_31
+  - first:
+      213: -7775295560500712517
+    second: food-Glitch_32
+  - first:
+      213: -1609572859413547121
+    second: food-Glitch_33
+  - first:
+      213: -828149103612705103
+    second: food-Glitch_34
+  - first:
+      213: -4658452568479001834
+    second: food-Glitch_35
+  - first:
+      213: -20107789684889395
+    second: food-Glitch_36
+  - first:
+      213: -7296850114098917357
+    second: food-Glitch_37
+  - first:
+      213: -3910588878764214372
+    second: food-Glitch_38
+  - first:
+      213: -1200791356135347440
+    second: food-Glitch_39
+  - first:
+      213: -5227558505030939200
+    second: food-Glitch_40
+  - first:
+      213: 6597873401922553570
+    second: food-Glitch_41
+  - first:
+      213: 1940036605468782922
+    second: food-Glitch_42
+  - first:
+      213: -6264175753643757579
+    second: food-Glitch_43
+  - first:
+      213: -7426990972164029747
+    second: food-Glitch_44
+  - first:
+      213: -8719318018519050848
+    second: food-Glitch_45
+  - first:
+      213: 3706951575347711558
+    second: food-Glitch_46
+  - first:
+      213: 9080442657970028818
+    second: food-Glitch_47
+  - first:
+      213: -272512296712288397
+    second: food-Glitch_48
+  - first:
+      213: 5619325994329831433
+    second: food-Glitch_49
+  - first:
+      213: 3207883358656560624
+    second: food-Glitch_50
+  - first:
+      213: 71547599017068399
+    second: food-Glitch_51
+  - first:
+      213: -6319749165955531571
+    second: food-Glitch_52
+  - first:
+      213: 1075512784108844898
+    second: food-Glitch_53
+  - first:
+      213: -487393555408619424
+    second: food-Glitch_54
+  - first:
+      213: 209827856779624951
+    second: food-Glitch_55
+  - first:
+      213: 9172001936969573563
+    second: food-Glitch_56
+  - first:
+      213: 6500367967461006478
+    second: food-Glitch_57
+  - first:
+      213: -4498542950467389191
+    second: food-Glitch_58
+  - first:
+      213: 4556635937628758587
+    second: food-Glitch_59
+  - first:
+      213: -2656023061894455686
+    second: food-Glitch_60
+  - first:
+      213: 5581117209389584690
+    second: food-Glitch_61
+  - first:
+      213: 6137333964314595255
+    second: food-Glitch_62
+  - first:
+      213: 8003221489280828685
+    second: food-Glitch_63
+  - first:
+      213: -5438863685966338258
+    second: food-Glitch_64
+  - first:
+      213: 1311655695058514037
+    second: food-Glitch_65
+  - first:
+      213: 5291010438819201358
+    second: food-Glitch_66
+  - first:
+      213: 4550142801859751507
+    second: food-Glitch_67
+  - first:
+      213: -3742243745293506596
+    second: food-Glitch_68
+  - first:
+      213: 938835221167723848
+    second: food-Glitch_69
+  - first:
+      213: -7934705501526711023
+    second: food-Glitch_70
+  - first:
+      213: 4698178721092597391
+    second: food-Glitch_71
+  - first:
+      213: -2969280131813557546
+    second: food-Glitch_72
+  - first:
+      213: -4463319395087025971
+    second: food-Glitch_73
+  - first:
+      213: -8277673263313531548
+    second: food-Glitch_74
+  - first:
+      213: 4587690679291698326
+    second: food-Glitch_75
+  - first:
+      213: 4399841508390323400
+    second: food-Glitch_76
+  - first:
+      213: -5735124326444601378
+    second: food-Glitch_77
+  - first:
+      213: 5580107845164951786
+    second: food-Glitch_78
+  - first:
+      213: -4161898415117603422
+    second: food-Glitch_79
+  - first:
+      213: -5043797789234185581
+    second: food-Glitch_80
+  - first:
+      213: 1555536957356843853
+    second: food-Glitch_81
+  - first:
+      213: 8070133422629031672
+    second: food-Glitch_82
+  - first:
+      213: -2105103826668809692
+    second: food-Glitch_83
+  - first:
+      213: -5841377152427251075
+    second: food-Glitch_84
+  - first:
+      213: -7350242751335523569
+    second: food-Glitch_85
+  - first:
+      213: 1999274320291730184
+    second: food-Glitch_86
+  - first:
+      213: -2884724941117095475
+    second: food-Glitch_87
+  - first:
+      213: -8339381187363322374
+    second: food-Glitch_88
+  - first:
+      213: -419769447767859072
+    second: food-Glitch_89
+  - first:
+      213: 5788277040958849995
+    second: food-Glitch_90
+  - first:
+      213: -7080821311376860669
+    second: food-Glitch_91
+  - first:
+      213: 5812877287750743207
+    second: food-Glitch_92
+  - first:
+      213: 6558999678404713752
+    second: food-Glitch_93
+  - first:
+      213: -4309920547778374986
+    second: food-Glitch_94
+  - first:
+      213: -2209485967228891411
+    second: food-Glitch_95
+  - first:
+      213: 7329816767907844351
+    second: food-Glitch_96
+  - first:
+      213: 7070335475582781727
+    second: food-Glitch_97
+  - first:
+      213: -6138549365838551396
+    second: food-Glitch_98
+  - first:
+      213: -3954857025839859758
+    second: food-Glitch_99
+  - first:
+      213: 2416149227665336551
+    second: food-Glitch_100
+  - first:
+      213: 6421783372806336013
+    second: food-Glitch_101
+  - first:
+      213: 965763158506538862
+    second: food-Glitch_102
+  - first:
+      213: -2178712477109762217
+    second: food-Glitch_103
+  - first:
+      213: 3907103995153374819
+    second: food-Glitch_104
+  - first:
+      213: -3608118141206987377
+    second: food-Glitch_105
+  - first:
+      213: 4679578406785493461
+    second: food-Glitch_106
+  - first:
+      213: 3632623460514188506
+    second: food-Glitch_107
+  - first:
+      213: 4098547335567153404
+    second: food-Glitch_108
+  - first:
+      213: -5515961002687910243
+    second: food-Glitch_109
+  - first:
+      213: 734074996557930534
+    second: food-Glitch_110
+  - first:
+      213: 5831401125233469436
+    second: food-Glitch_111
+  - first:
+      213: -5842966456526331937
+    second: food-Glitch_112
+  - first:
+      213: -1900450732136698822
+    second: food-Glitch_113
+  - first:
+      213: -4164875611517171753
+    second: food-Glitch_114
+  - first:
+      213: 1084545481339915931
+    second: food-Glitch_115
+  - first:
+      213: -5774684623093696243
+    second: food-Glitch_116
+  - first:
+      213: -6236657309099244572
+    second: food-Glitch_117
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: food-Glitch_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 352
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e132f156b7b1750800000000000000
+      internalID: 6276746179915226659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 359
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476eb36289b4ef800800000000000000
+      internalID: 648038513236502132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 352
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 438a88e855d252500800000000000000
+      internalID: 370752389814724660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 354
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03c6f59d92c7f7d60800000000000000
+      internalID: 7890161591358811184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a854a907d783aa0800000000000000
+      internalID: -6181052565987947964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4206c638ee6081aa0800000000000000
+      internalID: -6190190066343845852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 355
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf5ce6eab4df2630800000000000000
+      internalID: 3904573301156765660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 352
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26e524e6eae1dda40800000000000000
+      internalID: 5394501663182708322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 354
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42d4d2030da1d0b0800000000000000
+      internalID: -5705589024457698738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 356
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fde53798f5aeae0800000000000000
+      internalID: -1519296880333365358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 320
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0708ed4ebe76f740800000000000000
+      internalID: 5185471376779642634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 321
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071bd8f44999f9e00800000000000000
+      internalID: 1053729700096881008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_12
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 320
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c375bac1a1992810800000000000000
+      internalID: 1741082855032058824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_13
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 322
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c369c36ccb03af0800000000000000
+      internalID: -418627205739430812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 323
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdc5d05c8ae0a800800000000000000
+      internalID: 621754636949638598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_15
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 320
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adde1004b1b33570800000000000000
+      internalID: 8445289112904064423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 326
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b200c7036ce16d830800000000000000
+      internalID: 4095494747705835563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 322
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4e04ebfd3e657f0800000000000000
+      internalID: -624060948235098894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 327
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc2b0f3a8cdcd5c0800000000000000
+      internalID: -4189231067040109351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 329
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d410dc5ef45837c20800000000000000
+      internalID: 3203050338194882893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 288
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1e6fdb71285e61d0800000000000000
+      internalID: -3355647771509035494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc912a855f5f1d30800000000000000
+      internalID: 4404343781585951987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 293
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7e0347d93a01ec0800000000000000
+      internalID: -3598196205614471203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 293
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8418cffb445ec6b80800000000000000
+      internalID: -8400087121511284408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 289
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8bf6237879e14f0800000000000000
+      internalID: -856080272231253844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_25
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 288
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7c5416dba94a250800000000000000
+      internalID: 5955054745462097874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b14d4fbd3c38eff10800000000000000
+      internalID: 2305424936492389403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b23287d8319ae550800000000000000
+      internalID: 6190920311093998260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 291
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339b499d7fdd92ad0800000000000000
+      internalID: -2726404042819061453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e17676641083ebe0800000000000000
+      internalID: -1449173829976428057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 256
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2c2ced6a1c6f560800000000000000
+      internalID: 7347272764547580578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f7532d3776dd000800000000000000
+      internalID: 62319716998676316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 257
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbeeac02e9981490800000000000000
+      internalID: -7775295560500712517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 261
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87bb822306a9a9e0800000000000000
+      internalID: -1609572859413547121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 262
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b64b1a27c2d184f0800000000000000
+      internalID: -828149103612705103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_35
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 264
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6139dcc021ad95fb0800000000000000
+      internalID: -4658452568479001834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 258
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc82d92621098bff0800000000000000
+      internalID: -20107789684889395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 263
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3109dd94b716cba90800000000000000
+      internalID: -7296850114098917357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 263
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c977aaa422ccab9c0800000000000000
+      internalID: -3910588878764214372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 261
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b6138af9ee55fe0800000000000000
+      internalID: -1200791356135347440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 232
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd0f098c3bf377b0800000000000000
+      internalID: -5227558505030939200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 226
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6879ae6ea509b50800000000000000
+      internalID: 6597873401922553570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 225
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41b83093056cea10800000000000000
+      internalID: 1940036605468782922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 230
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffe271575d2119a0800000000000000
+      internalID: -6264175753643757579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_44
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 224
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2412a8f070ee890800000000000000
+      internalID: -7426990972164029747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 231
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a552868572cef680800000000000000
+      internalID: -8719318018519050848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 227
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ecc2841dcb17330800000000000000
+      internalID: 3706951575347711558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 229
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2118b97bc76340e70800000000000000
+      internalID: 9080442657970028818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 225
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377c98d8287d73cf0800000000000000
+      internalID: -272512296712288397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908f529283bdbfd40800000000000000
+      internalID: 5619325994329831433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd7c992be0b48c20800000000000000
+      internalID: 3207883358656560624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 199
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67c1f789203ef000800000000000000
+      internalID: 71547599017068399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_52
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 197
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc36a5fd9dbb48a0800000000000000
+      internalID: -6319749165955531571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_53
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 200
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267f238cd2dfcee00800000000000000
+      internalID: 1075512784108844898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_54
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 199
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068fd08c42e6c39f0800000000000000
+      internalID: -487393555408619424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_55
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 201
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1c453f25579e200800000000000000
+      internalID: 209827856779624951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_56
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 202
+        width: 27
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb424449a2f794f70800000000000000
+      internalID: 9172001936969573563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_57
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 199
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c57d9d932f53a50800000000000000
+      internalID: 6500367967461006478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 199
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8bd865507f191c0800000000000000
+      internalID: -4498542950467389191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_59
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3224214e3c6c3f30800000000000000
+      internalID: 4556635937628758587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_60
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e1980f819e32bd0800000000000000
+      internalID: -2656023061894455686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_61
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2315c7b288c147d40800000000000000
+      internalID: 5581117209389584690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 164
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf49ea39b03c2550800000000000000
+      internalID: 6137333964314595255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_63
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 160
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d054b57aa87211f60800000000000000
+      internalID: 8003221489280828685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_64
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2764304b464584b0800000000000000
+      internalID: -5438863685966338258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_65
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 160
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570b49bb7efe33210800000000000000
+      internalID: 1311655695058514037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_66
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 160
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c3bc06f17d6940800000000000000
+      internalID: 5291010438819201358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_67
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 160
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ea62645ca552f30800000000000000
+      internalID: 4550142801859751507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_68
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd76ad21421e01cc0800000000000000
+      internalID: -3742243745293506596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_69
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 160
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845d354d8a9670d00800000000000000
+      internalID: 938835221167723848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 133
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115a920e26342e190800000000000000
+      internalID: -7934705501526711023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 129
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86f502a7a8433140800000000000000
+      internalID: 4698178721092597391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 134
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dab0a8b37ffac6d0800000000000000
+      internalID: -2969280131813557546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 135
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8f9b868aa1f02c0800000000000000
+      internalID: -4463319395087025971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 134
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46dc275260ccf1d80800000000000000
+      internalID: -8277673263313531548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_75
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 135
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c5d8ebd50caaf30800000000000000
+      internalID: 4587690679291698326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 135
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c4cf9f5a806f0d30800000000000000
+      internalID: 4399841508390323400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_77
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 128
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf6193afceb860b0800000000000000
+      internalID: -5735124326444601378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_78
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 135
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae86d6f3586807d40800000000000000
+      internalID: 5580107845164951786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_79
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 134
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad67af2177fd36c0800000000000000
+      internalID: -4161898415117603422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_80
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 96
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39abbc542a4d00ab0800000000000000
+      internalID: -5043797789234185581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_81
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d432f320f90669510800000000000000
+      internalID: 1555536957356843853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_82
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 96
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe8fc9279fdeff60800000000000000
+      internalID: 8070133422629031672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_83
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 98
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4221714193b29c2e0800000000000000
+      internalID: -2105103826668809692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_84
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 96
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7aad76cd624feea0800000000000000
+      internalID: -5841377152427251075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_85
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 96
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b91c13921bef990800000000000000
+      internalID: -7350242751335523569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_86
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 96
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8039c85d669debb10800000000000000
+      internalID: 1999274320291730184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1810233f567f7d0800000000000000
+      internalID: -2884724941117095475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 100
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af542a87ef0944c80800000000000000
+      internalID: -8339381187363322374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_89
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 98
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0802c3a49edac2af0800000000000000
+      internalID: -419769447767859072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3c6e71d47145050800000000000000
+      internalID: 5788277040958849995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_91
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30add59788edbbd90800000000000000
+      internalID: -7080821311376860669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 68
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4b153681d7ba050800000000000000
+      internalID: 5812877287750743207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_93
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81dd639d47f360b50800000000000000
+      internalID: 6558999678404713752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_94
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b25383c8161034c0800000000000000
+      internalID: -4309920547778374986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 72
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee8c1b18345651e0800000000000000
+      internalID: -2209485967228891411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_96
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 71
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff059dfe38db8b560800000000000000
+      internalID: 7329816767907844351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_97
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 67
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1944f0a7a0ee1260800000000000000
+      internalID: 7070335475582781727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_98
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 69
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c966efc00ed7fcaa0800000000000000
+      internalID: -6138549365838551396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 69
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d77b5d1d768d19c0800000000000000
+      internalID: -3954857025839859758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8a357dbe2e78120800000000000000
+      internalID: 2416149227665336551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_101
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ea1a814f1ce1950800000000000000
+      internalID: 6421783372806336013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_102
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 32
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6701ffc974176d00800000000000000
+      internalID: 965763158506538862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_103
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 36
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757492e9b88a3c1e0800000000000000
+      internalID: -2178712477109762217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36e50a30262d83630800000000000000
+      internalID: 3907103995153374819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_105
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 33
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8df6bdcaa36dedc0800000000000000
+      internalID: -3608118141206987377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_106
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 33
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9a90b74c331f040800000000000000
+      internalID: 4679578406785493461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_107
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 35
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcc2b67acba96230800000000000000
+      internalID: 3632623460514188506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 37
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf89a9f2617f0e830800000000000000
+      internalID: 4098547335567153404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 38
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e21ef51be5373b0800000000000000
+      internalID: -5515961002687910243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620e450f155ff2a00800000000000000
+      internalID: 734074996557930534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_111
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 5
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7aa546d6c4de050800000000000000
+      internalID: 5831401125233469436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdf993417fc99eea0800000000000000
+      internalID: -5842966456526331937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_113
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c6cddc02e30a5e0800000000000000
+      internalID: -1900450732136698822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_114
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d7c4d1a2b36336c0800000000000000
+      internalID: -4164875611517171753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_115
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 3
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e450e7e541d0f00800000000000000
+      internalID: 1084545481339915931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_116
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 5
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09f69e4ee23cdfa0800000000000000
+      internalID: -5774684623093696243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: food-Glitch_117
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 10
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3cb497831f279a0800000000000000
+      internalID: -6236657309099244572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      food-Glitch_0: 6276746179915226659
+      food-Glitch_1: 648038513236502132
+      food-Glitch_10: 5185471376779642634
+      food-Glitch_100: 2416149227665336551
+      food-Glitch_101: 6421783372806336013
+      food-Glitch_102: 965763158506538862
+      food-Glitch_103: -2178712477109762217
+      food-Glitch_104: 3907103995153374819
+      food-Glitch_105: -3608118141206987377
+      food-Glitch_106: 4679578406785493461
+      food-Glitch_107: 3632623460514188506
+      food-Glitch_108: 4098547335567153404
+      food-Glitch_109: -5515961002687910243
+      food-Glitch_11: 1053729700096881008
+      food-Glitch_110: 734074996557930534
+      food-Glitch_111: 5831401125233469436
+      food-Glitch_112: -5842966456526331937
+      food-Glitch_113: -1900450732136698822
+      food-Glitch_114: -4164875611517171753
+      food-Glitch_115: 1084545481339915931
+      food-Glitch_116: -5774684623093696243
+      food-Glitch_117: -6236657309099244572
+      food-Glitch_12: 1741082855032058824
+      food-Glitch_13: -418627205739430812
+      food-Glitch_14: 621754636949638598
+      food-Glitch_15: 8445289112904064423
+      food-Glitch_16: 4095494747705835563
+      food-Glitch_17: -624060948235098894
+      food-Glitch_18: -4189231067040109351
+      food-Glitch_19: 3203050338194882893
+      food-Glitch_2: 370752389814724660
+      food-Glitch_20: -3355647771509035494
+      food-Glitch_21: 4404343781585951987
+      food-Glitch_22: -3598196205614471203
+      food-Glitch_23: -8400087121511284408
+      food-Glitch_24: -856080272231253844
+      food-Glitch_25: 5955054745462097874
+      food-Glitch_26: 2305424936492389403
+      food-Glitch_27: 6190920311093998260
+      food-Glitch_28: -2726404042819061453
+      food-Glitch_29: -1449173829976428057
+      food-Glitch_3: 7890161591358811184
+      food-Glitch_30: 7347272764547580578
+      food-Glitch_31: 62319716998676316
+      food-Glitch_32: -7775295560500712517
+      food-Glitch_33: -1609572859413547121
+      food-Glitch_34: -828149103612705103
+      food-Glitch_35: -4658452568479001834
+      food-Glitch_36: -20107789684889395
+      food-Glitch_37: -7296850114098917357
+      food-Glitch_38: -3910588878764214372
+      food-Glitch_39: -1200791356135347440
+      food-Glitch_4: -6181052565987947964
+      food-Glitch_40: -5227558505030939200
+      food-Glitch_41: 6597873401922553570
+      food-Glitch_42: 1940036605468782922
+      food-Glitch_43: -6264175753643757579
+      food-Glitch_44: -7426990972164029747
+      food-Glitch_45: -8719318018519050848
+      food-Glitch_46: 3706951575347711558
+      food-Glitch_47: 9080442657970028818
+      food-Glitch_48: -272512296712288397
+      food-Glitch_49: 5619325994329831433
+      food-Glitch_5: -6190190066343845852
+      food-Glitch_50: 3207883358656560624
+      food-Glitch_51: 71547599017068399
+      food-Glitch_52: -6319749165955531571
+      food-Glitch_53: 1075512784108844898
+      food-Glitch_54: -487393555408619424
+      food-Glitch_55: 209827856779624951
+      food-Glitch_56: 9172001936969573563
+      food-Glitch_57: 6500367967461006478
+      food-Glitch_58: -4498542950467389191
+      food-Glitch_59: 4556635937628758587
+      food-Glitch_6: 3904573301156765660
+      food-Glitch_60: -2656023061894455686
+      food-Glitch_61: 5581117209389584690
+      food-Glitch_62: 6137333964314595255
+      food-Glitch_63: 8003221489280828685
+      food-Glitch_64: -5438863685966338258
+      food-Glitch_65: 1311655695058514037
+      food-Glitch_66: 5291010438819201358
+      food-Glitch_67: 4550142801859751507
+      food-Glitch_68: -3742243745293506596
+      food-Glitch_69: 938835221167723848
+      food-Glitch_7: 5394501663182708322
+      food-Glitch_70: -7934705501526711023
+      food-Glitch_71: 4698178721092597391
+      food-Glitch_72: -2969280131813557546
+      food-Glitch_73: -4463319395087025971
+      food-Glitch_74: -8277673263313531548
+      food-Glitch_75: 4587690679291698326
+      food-Glitch_76: 4399841508390323400
+      food-Glitch_77: -5735124326444601378
+      food-Glitch_78: 5580107845164951786
+      food-Glitch_79: -4161898415117603422
+      food-Glitch_8: -5705589024457698738
+      food-Glitch_80: -5043797789234185581
+      food-Glitch_81: 1555536957356843853
+      food-Glitch_82: 8070133422629031672
+      food-Glitch_83: -2105103826668809692
+      food-Glitch_84: -5841377152427251075
+      food-Glitch_85: -7350242751335523569
+      food-Glitch_86: 1999274320291730184
+      food-Glitch_87: -2884724941117095475
+      food-Glitch_88: -8339381187363322374
+      food-Glitch_89: -419769447767859072
+      food-Glitch_9: -1519296880333365358
+      food-Glitch_90: 5788277040958849995
+      food-Glitch_91: -7080821311376860669
+      food-Glitch_92: 5812877287750743207
+      food-Glitch_93: 6558999678404713752
+      food-Glitch_94: -4309920547778374986
+      food-Glitch_95: -2209485967228891411
+      food-Glitch_96: 7329816767907844351
+      food-Glitch_97: 7070335475582781727
+      food-Glitch_98: -6138549365838551396
+      food-Glitch_99: -3954857025839859758
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

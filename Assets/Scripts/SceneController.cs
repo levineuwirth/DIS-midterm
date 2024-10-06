@@ -10,6 +10,7 @@ public class SceneController : MonoBehaviour
         if(instance == null) {
             instance = this;
             DontDestroyOnLoad(gameObject);
+            Debug.Log("set to not destroy on load");
         }
         else {
             Destroy(gameObject);

@@ -6,7 +6,6 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
     [Header("Level-Specific Data")]
-    public Vector3[] positions; // All positions where items could spawn
     public Item[] spawnableItems; // All items to be spawned, in order of spawning from level start.
     public Item noneItem; // Special case item representing "nothing" (DO NOT ADD TO SPAWNABLE ITEMS!)
     public float spawnDuration = 1f;
@@ -28,7 +27,7 @@ public class ItemSpawner : MonoBehaviour
 
         // Start the spawning loop as a coroutine
         StartCoroutine(SpawnItems());
-	    PlayerItemCollector.EOnItemPickUp += () => handleCollection();
+	    PlayerItemCollector.EOnItemPickUp += handleCollection;
     }
 
     IEnumerator SpawnItems()
@@ -40,9 +39,9 @@ public class ItemSpawner : MonoBehaviour
             if (lastSpawnedItem != null)
             {
                 Destroy(lastSpawnedItem);
-		if(addBack){
-		    spawns.Enqueue(currentItem);
-		}
+		        if(addBack){
+		            spawns.Enqueue(currentItem);
+		        }
                 lastSpawnedItem = null; // Clear the reference after destroying
             }
 
@@ -50,42 +49,24 @@ public class ItemSpawner : MonoBehaviour
             {
                 currentItem = spawns.Dequeue();
                 Vector3 spawnPosition = this.transform.position;
-		addBack = true;
-		if (currentItem != null && !currentItem.isNone){
-		    lastSpawnedItem = Instantiate(currentItem.gameObject, spawnPosition, Quaternion.identity);
-		}
-	    }
+		        addBack = true;
+		        if (currentItem != null && !currentItem.isNone){
+		            lastSpawnedItem = Instantiate(currentItem.gameObject, spawnPosition, Quaternion.identity);
+		        }
+	        }
                 
             yield return new WaitForSeconds(spawnDuration);
         }
     }
 
-    Vector3? GetValidSpawnPosition(Item item)
-    {
-        List<Vector3> validPositions = new List<Vector3>();
-
-        foreach (Vector3 pos in positions)
-        {
-            foreach (Vector3 allowedPos in item.allowedLocations)
-            {
-                if (pos == allowedPos)
-                {
-                    validPositions.Add(pos);
-                }
+    private void handleCollection(Item.IngredientType playerIngredient){
+	    Debug.Log("pickup event heard");
+        if(lastSpawnedItem != null) {
+            if(lastSpawnedItem.GetComponent<Item>().ingredientID == playerIngredient) {
+                Destroy(lastSpawnedItem);
+                addBack = false;
             }
         }
-
-        if (validPositions.Count > 0)
-        {
-            return validPositions[UnityEngine.Random.Range(0, validPositions.Count)];
-        }
-
-        return null;
-    }
-
-    private void handleCollection(){
-	Destroy(lastSpawnedItem);
-	addBack = false;
     }
     
 }

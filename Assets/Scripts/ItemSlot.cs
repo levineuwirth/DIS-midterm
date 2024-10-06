@@ -24,17 +24,17 @@ public class ItemSlot: MonoBehaviour
     }
 
     public void setItemSprite(){
-    Debug.Log("Begin instantiation process.");
-    
-    GameObject newItemVisualization = Instantiate(itemVisualization, transform);
-    newItemVisualization.transform.localPosition = Vector3.zero;
-    iz = newItemVisualization.GetComponentInChildren<ItemVisualization>();
-    
-    if (iz != null) {
-        iz.setSprite(associatedItem);
-        Debug.Log("ItemVisualization instance created and sprite set.");
-    } else {
-        Debug.LogError("ItemVisualization component not found in the instantiated object or its children.");
-    }
+        Debug.Log("Begin instantiation process.");
+        
+        GameObject newItemVisualization = Instantiate(itemVisualization, transform);
+        newItemVisualization.transform.localPosition = Vector3.zero;
+        iz = newItemVisualization.GetComponentInChildren<ItemVisualization>();
+        
+        if (iz != null) {
+            iz.setSprite(associatedItem);
+            Debug.Log("ItemVisualization instance created and sprite set.");
+        } else {
+            Debug.LogError("ItemVisualization component not found in the instantiated object or its children.");
+        }
     }
 }

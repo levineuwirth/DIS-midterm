@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb1dc83631fe8062bbc6ec65c1eb465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positions: []
-  spawnableItems: []
-  noneItem: {fileID: 0}
-  spawnDuration: 0
+  spawnableItems:
+  - {fileID: 4037731361758217054, guid: e9335f7117a714dbd9bd38f55e645eb8, type: 3}
+  - {fileID: 8998345610810982231, guid: 6fb84279d770e42a2ad5df03335026dc, type: 3}
+  - {fileID: 8056512524635033197, guid: b9ed74a0b294d40d19cfa1a2b0f4e219, type: 3}
+  noneItem: {fileID: 2907284804209224361, guid: 693f29172ed8971fca61e649327f7788, type: 3}
+  spawnDuration: 10

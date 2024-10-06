@@ -42,7 +42,7 @@ public class Oven : MonoBehaviour
         shotDelayZag -= Time.deltaTime;
         if(CurrentClipInfo[0].clip.name == "OvenIdleOpen" || CurrentClipInfo[0].clip.name == "OvenOpen")
         {
-            Debug.Log("right clip");
+            // Debug.Log("right clip");
             if(shotType == 1)
             {
                 if(shotDelayWall <= 0)
@@ -53,20 +53,20 @@ public class Oven : MonoBehaviour
             }
             else if(shotType == 2)
             {
-                Debug.Log("right shot type");
+                // Debug.Log("right shot type");
                 if(shotDelayZag <= 0){
-                    Debug.Log("shot delay over");
+                    // Debug.Log("shot delay over");
                     ShootZigZag(counter);
                     counter++;
                     if (counter == 6)
                     {
-                        Debug.Log("counter reset");
+                        // Debug.Log("counter reset");
                         counter = 1;
                     }
                     shotDelayZag = 0.5f;
                 }
             }
-            Debug.Log("shot delay reset");
+            // Debug.Log("shot delay reset");
         }
 
     }

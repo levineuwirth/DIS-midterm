@@ -13,7 +13,7 @@ public class PlayerItemCollector : MonoBehaviour
 
     public delegate void OnItemSubmit(Item.IngredientType currentIngredientType);
     public static OnItemSubmit EOnItemSubmit;
-    public delegate void OnItemPickUp();
+    public delegate void OnItemPickUp(Item.IngredientType currentIngredientType);
     public static OnItemPickUp EOnItemPickUp;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,7 +51,7 @@ public class PlayerItemCollector : MonoBehaviour
         _nearestIngredient = Physics2D.OverlapBox(transform.position, pickUpHitboxSize, 0, itemLayerMask);
 
         if(_nearestIngredient != null) {
-            Debug.Log(_nearestIngredient.gameObject.GetComponent<Item>().ingredientID);
+            // Debug.Log(_nearestIngredient.gameObject.GetComponent<Item>().ingredientID);
             // Invoke event to have popUp
         }
     }
@@ -63,7 +63,7 @@ public class PlayerItemCollector : MonoBehaviour
             isHoldingItem = true;
 
             Debug.Log("pickedUpItem");
-            EOnItemPickUp?.Invoke();
+            EOnItemPickUp?.Invoke(_currentIngredientType);
         }
     }
 

@@ -25,6 +25,13 @@ public class Item : MonoBehaviour {
         Butter,
         Bread,
         Cheese,
+        Bacon,
+        Beef,
+        Carrot,
+        Potato,
+        Water,
+        Tomato,
+        Rice,
         None
     }
 
