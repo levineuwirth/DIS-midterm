@@ -9,7 +9,6 @@ public class Oven : MonoBehaviour
     public float swingTime;
     public LayerMask ovenLayerMask;
     public Animator ovenAnimator { get; private set; }
-    public DoorCollider doorCollider;
     public GameObject fireballPrefab;
 
     private bool shootReady;

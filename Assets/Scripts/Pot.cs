@@ -10,7 +10,6 @@ public class Pot : MonoBehaviour
     public LayerMask potLayerMask;
     public Animator potAnimator { get; private set; }
     public GameObject bubblePrefab;
-    public DoorCollider doorCollider;
     public GameObject waterPrefab;
 
     private AnimatorClipInfo[] CurrentClipInfo;

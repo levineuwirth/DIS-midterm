@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6486045535872929249
+--- !u!1 &9037671581166238069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2272738602089411288}
-  - component: {fileID: 6240462132502562248}
-  - component: {fileID: 2385460151169192929}
-  - component: {fileID: 9193263801320734431}
-  - component: {fileID: 4404356902848412360}
+  - component: {fileID: 6434646297879847617}
+  - component: {fileID: 2848879422807687400}
+  - component: {fileID: 1048339364473616162}
+  - component: {fileID: 1360945562793629299}
+  - component: {fileID: 3534474987741769826}
+  - component: {fileID: 1932755375812632846}
   m_Layer: 0
-  m_Name: Pot
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2272738602089411288
+--- !u!4 &6434646297879847617
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486045535872929249}
+  m_GameObject: {fileID: 9037671581166238069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 0}
+  m_LocalPosition: {x: 15.49, y: -5.206, z: 0.0258}
+  m_LocalScale: {x: 13.273399, y: 13.273399, z: 13.273399}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6240462132502562248
+--- !u!212 &2848879422807687400
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486045535872929249}
+  m_GameObject: {fileID: 9037671581166238069}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,68 +77,39 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2048968735
-  m_SortingLayer: -3
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8200443108533574130, guid: 5f63863cc1a394c5d96a171fac67fe31, type: 3}
+  m_Sprite: {fileID: -7341407202210888751, guid: 5e692452b3bfb4064a4b148ad8e9d20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.8, y: 0.83}
+  m_Size: {x: 0.16, y: 0.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2385460151169192929
+--- !u!114 &1048339364473616162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486045535872929249}
+  m_GameObject: {fileID: 9037671581166238069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a461e2fe4ce794a0dacd507830f962a7, type: 3}
+  m_Script: {fileID: 11500000, guid: cab1eab8c6b20465e9dd949bfde2682d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swingTime: 1.5
-  potLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  bubblePrefab: {fileID: 7214620673391272793, guid: b37512c902514469a852f0ed643cd1d0, type: 3}
-  doorCollider: {fileID: 0}
-  waterPrefab: {fileID: 2549499456637363593, guid: 25b85d641df1d440aab43ff2743e0d4c, type: 3}
---- !u!95 &9193263801320734431
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486045535872929249}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f2b396c60c13f464fa3ca86fbf0377d2, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!61 &4404356902848412360
+--- !u!61 &1360945562793629299
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6486045535872929249}
+  m_GameObject: {fileID: 9037671581166238069}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -161,7 +133,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -169,11 +141,45 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.8, y: 0.83}
-    newSize: {x: 1.8, y: 0.83}
+    oldSize: {x: 0.15, y: 0.27}
+    newSize: {x: 0.16, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.8, y: 0.83}
+  m_Size: {x: 0.15, y: 0.27}
   m_EdgeRadius: 0
+--- !u!114 &3534474987741769826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037671581166238069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ac642995147646a0b623d8662847945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &1932755375812632846
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9037671581166238069}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a546a68a613549fb937488823306f4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
