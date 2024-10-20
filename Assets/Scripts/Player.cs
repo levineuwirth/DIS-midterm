@@ -16,6 +16,9 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float jumpForce {get ; private set;}
     [field: SerializeField] public float downwardForce {get ; private set;}
 
+    [field: SerializeField] public float coyoteTime {get ; private set;}
+    private float coyoteTimeCounter;
+
     [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
     [field: SerializeField] public float castDistance {get ; private set;}
@@ -50,13 +53,21 @@ public class Player : MonoBehaviour
 
             flipSprite();
 
-            if(Input.GetKeyDown(PlayerController.Instance.jump) && isGrounded()) {
+            if(isGrounded()) {
+                coyoteTimeCounter = coyoteTime;
+            }
+            else {
+                coyoteTimeCounter -= Time.deltaTime;
+            }
+
+            if(Input.GetKeyDown(PlayerController.Instance.jump) && coyoteTimeCounter > 0f) {
                 _isJumpBuffered = true;
                 _jumpCutDone = false;
             }
             
             if(Input.GetKeyUp(PlayerController.Instance.jump) && _rigidbody.linearVelocityY > 0 && !_jumpCutDone) {
                 _isJumpRelease = true;
+                coyoteTimeCounter = 0f;
             }
         }
         else if(PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
