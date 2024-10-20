@@ -11,6 +11,7 @@ public class PlayerItemCollector : MonoBehaviour
     public LayerMask itemSubmitLayerMask;
 
     [field: SerializeField] public AudioSource itemPickupSFX {get ; private set;}
+    [field: SerializeField] public AudioSource itemCantPickupSFX {get ; private set;}
     [field: SerializeField] public AudioSource itemSubmitSFX {get ; private set;}
 
     public delegate void OnItemSubmit(Item.IngredientType currentIngredientType);
@@ -30,9 +31,13 @@ public class PlayerItemCollector : MonoBehaviour
     {
         checkForItem();
         
-        if(isHoldingItem && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
+        if(isHoldingItem) {
             Debug.Log("submit item called");
             submitItem();
+
+            if(_nearestIngredient != null && Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
+                itemCantPickupSFX.Play();
+            }
         }
         else if(Input.GetKeyDown(PlayerController.Instance.pickOrDropItem)) {
             pickUpItem();

@@ -5,7 +5,8 @@ public class Door : MonoBehaviour
 {
 
     public static Animator doorAnimator;
-    public Animator loadingScreen;
+    [field: SerializeField] public AudioSource doorOpenSFX {get ; private set;}
+    [field: SerializeField] public Animator loadingScreen {get ; private set;}
     private BoxCollider2D doorCollider;
 
     private void Start() {
@@ -37,6 +38,7 @@ public class Door : MonoBehaviour
         doorAnimator.SetBool("OpenDoor", true);
         doorCollider.enabled = true;
 	    doorCollider.isTrigger = true;
+        doorOpenSFX.Play();
     }
 
     IEnumerator LoadLoadingScreen() {

@@ -1466,6 +1466,10 @@ PrefabInstance:
       propertyPath: loadingScreen
       value: 
       objectReference: {fileID: 369171763}
+    - target: {fileID: 1048339364473616162, guid: 6214b6604f8044f77a656564675cdb3f, type: 3}
+      propertyPath: <loadingScreen>k__BackingField
+      value: 
+      objectReference: {fileID: 369171763}
     - target: {fileID: 6434646297879847617, guid: 6214b6604f8044f77a656564675cdb3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.94
