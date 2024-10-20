@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SC_BackgroundScaler : MonoBehaviour
+public class BackgroundScaler : MonoBehaviour
 {
     Image backgroundImage;
     RectTransform rt;
