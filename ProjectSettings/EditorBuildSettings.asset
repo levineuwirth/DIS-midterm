@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: dc7bd3374f2b8ebb883e66ba71bfbba4
   - enabled: 1
-    path: Assets/Scenes/Pot.unity
-    guid: 546a113a79f37def4be9fb09505352a3
-  - enabled: 1
     path: Assets/Scenes/Stove.unity
     guid: 4a56cff515b5e9c7ab61e679d55c8d29
+  - enabled: 1
+    path: Assets/Scenes/Pot.unity
+    guid: 546a113a79f37def4be9fb09505352a3
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 078170a14dcdc4c428c714abdbcf2e4c

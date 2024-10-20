@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3212639610647685990, guid: 0fe54de90f49c486ab7985528d5bf795, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Cheese
       objectReference: {fileID: 0}
     - target: {fileID: 6392971722854815416, guid: 0fe54de90f49c486ab7985528d5bf795, type: 3}
       propertyPath: ingredientID

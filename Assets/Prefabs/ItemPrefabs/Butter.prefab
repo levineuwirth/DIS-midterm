@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 895842191214242427, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Butter
       objectReference: {fileID: 0}
     - target: {fileID: 4786135336498327247, guid: 0497bed41a3eb2962bd08a87afd683e7, type: 3}
       propertyPath: m_Size.x

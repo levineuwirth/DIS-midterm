@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float frictionAmount {get ; private set;}
 
     [Header("Jumping")]
-    public float jumpForce;
+    [field: SerializeField] public float jumpForce {get ; private set;}
     [field: SerializeField] public float downwardForce {get ; private set;}
 
     [Header("Ground Check Visualizer")]
@@ -22,8 +22,8 @@ public class Player : MonoBehaviour
     [field: SerializeField] public LayerMask groundLayer {get ; private set;}
     [field: SerializeField] public float postDeathTimer {get ; private set;}
 
-    private Rigidbody2D _rb;
-    private SpriteRenderer _sr;
+    private Rigidbody2D _rigidbody;
+    private SpriteRenderer _spriteRenderer;
     private ParticleSystem _dust;
     private AudioSource _jumpSound;
     private bool _isJumpBuffered = false;
@@ -34,8 +34,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         Health.EOnDamageTaken += () => InvulnerabilityBlink();
-        _rb = gameObject.GetComponent<Rigidbody2D>();
-        _sr = gameObject.GetComponent<SpriteRenderer>();
+        _rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _dust = gameObject.GetComponent<ParticleSystem>();
         _jumpSound = gameObject.GetComponent<AudioSource>();
     }
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
                 _jumpCutDone = false;
             }
             
-            if(Input.GetKeyUp(PlayerController.Instance.jump) && _rb.linearVelocityY > 0 && !_jumpCutDone) {
+            if(Input.GetKeyUp(PlayerController.Instance.jump) && _rigidbody.linearVelocityY > 0 && !_jumpCutDone) {
                 _isJumpRelease = true;
             }
         }
@@ -82,13 +82,13 @@ public class Player : MonoBehaviour
     private void Run() {
         float targetSpeed = _moveInput * moveSpeed;
 
-        float speedDif = targetSpeed - _rb.linearVelocityX;
+        float speedDif = targetSpeed - _rigidbody.linearVelocityX;
 
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : decceleration;
 
         float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
 
-        _rb.AddForce(movement * Vector2.right);
+        _rigidbody.AddForce(movement * Vector2.right);
 
         ApplyFriction(targetSpeed);
     }
@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
     private void Jump() {
         if(_isJumpBuffered) {
             _isJumpBuffered = false;
-            _rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
             // vfx and sfx
             CreateDust();
@@ -107,21 +107,21 @@ public class Player : MonoBehaviour
         else if(_isJumpRelease) {
             _isJumpRelease = false;
             _jumpCutDone = true;
-            _rb.AddForce(Vector2.down * _rb.linearVelocityY, ForceMode2D.Impulse);
+            _rigidbody.AddForce(Vector2.down * _rigidbody.linearVelocityY, ForceMode2D.Impulse);
         }
     }
     
     private void FastFall() {
-        if(_rb.linearVelocityY < 0) {
-            _rb.AddForce(Vector2.down * downwardForce * _rb.mass, ForceMode2D.Force);
+        if(_rigidbody.linearVelocityY < 0) {
+            _rigidbody.AddForce(Vector2.down * downwardForce * _rigidbody.mass, ForceMode2D.Force);
         }
     }
 
     private void ApplyFriction(float targetSpeed) {
         if(isGrounded() && Mathf.Abs(targetSpeed) < 0.01f) {
-            float amount = Mathf.Min(Mathf.Abs(_rb.linearVelocityX), Math.Abs(frictionAmount)) * Mathf.Sign(_rb.linearVelocityX);
+            float amount = Mathf.Min(Mathf.Abs(_rigidbody.linearVelocityX), Math.Abs(frictionAmount)) * Mathf.Sign(_rigidbody.linearVelocityX);
 
-            _rb.AddForce(Vector2.right * -amount, ForceMode2D.Impulse);
+            _rigidbody.AddForce(Vector2.right * -amount, ForceMode2D.Impulse);
         }
     }
 
@@ -145,14 +145,17 @@ public class Player : MonoBehaviour
 
     private void flipSprite() {
         // add particles when changing direction
-        if(_sr.flipX != PlayerAnimation.Instance.getFlip() && isGrounded()) {
+        if(_spriteRenderer.flipX != PlayerAnimation.Instance.getFlip() && isGrounded()) {
             CreateDust();
         }
 
-        _sr.flipX = PlayerAnimation.Instance.getFlip();
+        _spriteRenderer.flipX = PlayerAnimation.Instance.getFlip();
     }
 
     private void KillPlayer() {
+        _rigidbody.linearVelocity = new Vector2(0, 0);
+
+
         SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -163,11 +166,11 @@ public class Player : MonoBehaviour
 
     IEnumerator BlinkSprite() {
         
-        _sr.color = Color.gray;
+        _spriteRenderer.color = Color.gray;
 
         yield return new WaitForSeconds(1.5f);
 
-        _sr.color = Color.white;
+        _spriteRenderer.color = Color.white;
     }
 
     private void OnDestroy() {

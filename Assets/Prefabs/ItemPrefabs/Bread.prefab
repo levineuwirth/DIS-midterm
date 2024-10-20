@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8480976431855236409, guid: e28d9425739074ed997d3778b9416a38, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Bread
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
