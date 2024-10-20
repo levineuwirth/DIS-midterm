@@ -38,6 +38,7 @@ public class MenuController : MonoBehaviour
         Time.timeScale = 1;
     }
     public void EnterControlPanel() {
+        Debug.Log("entered control panel");
         if(PausePanel != null) {
             PausePanel.SetActive(false);
         }

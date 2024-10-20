@@ -205,6 +205,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1024867037}
     m_Modifications:
+    - target: {fileID: 335083421367514292, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775117695361670957, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1941168343006031667, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -238,6 +246,14 @@ PrefabInstance:
       value: 'EXIT
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385866709215347894, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102209876468210773, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5601361382355163348, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Pivot.x
@@ -322,6 +338,10 @@ PrefabInstance:
     - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Name
       value: Exit Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -412,6 +432,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1024867037}
     m_Modifications:
+    - target: {fileID: 335083421367514292, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775117695361670957, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1941168343006031667, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -447,6 +475,14 @@ PrefabInstance:
     - target: {fileID: 2460512843081869773, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_text
       value: CONTROLS
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385866709215347894, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102209876468210773, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5601361382355163348, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Pivot.x
@@ -531,6 +567,10 @@ PrefabInstance:
     - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Name
       value: Controls Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -691,7 +731,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1409506549
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1024867037
@@ -804,8 +844,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1024867037}
   - {fileID: 1761546945}
+  - {fileID: 1024867037}
   - {fileID: 198842430}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1050,7 +1090,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -800227521
+  m_SortingLayerID: 355414061
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1775620363 stripped
@@ -1082,6 +1122,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1024867037}
     m_Modifications:
+    - target: {fileID: 98153953072571383, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3199929869283434245, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1166,6 +1210,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title Container
       objectReference: {fileID: 0}
+    - target: {fileID: 3273622325299123044, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550587438249342464, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4615896888725433237, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6371864639822771727, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_text
       value: Food Fight!
@@ -1177,6 +1233,10 @@ PrefabInstance:
     - target: {fileID: 6371864639822771727, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
       propertyPath: m_fontSizeBase
       value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276398447629475771, guid: bdeee0965c0fe4f8db8efa9b80f812ac, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1296,6 +1356,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1024867037}
     m_Modifications:
+    - target: {fileID: 335083421367514292, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 775117695361670957, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1941168343006031667, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1337,6 +1405,14 @@ PrefabInstance:
       value: 'PLAY
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385866709215347894, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4102209876468210773, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5601361382355163348, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Pivot.x
@@ -1425,6 +1501,10 @@ PrefabInstance:
     - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
       propertyPath: m_Name
       value: Play Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 8202256201077231820, guid: ec47f88fa3214419182f7d2dbe939d73, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
