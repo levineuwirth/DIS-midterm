@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float downwardForce {get ; private set;}
 
     [field: SerializeField] public float coyoteTime {get ; private set;}
-    private float coyoteTimeCounter;
+    private float _coyoteTimeCounter;
 
     [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
@@ -54,20 +54,20 @@ public class Player : MonoBehaviour
             flipSprite();
 
             if(isGrounded()) {
-                coyoteTimeCounter = coyoteTime;
+                _coyoteTimeCounter = coyoteTime;
             }
             else {
-                coyoteTimeCounter -= Time.deltaTime;
+                _coyoteTimeCounter -= Time.deltaTime;
             }
 
-            if(Input.GetKeyDown(PlayerController.Instance.jump) && coyoteTimeCounter > 0f) {
+            if(Input.GetKeyDown(PlayerController.Instance.jump) && _coyoteTimeCounter > 0f) {
                 _isJumpBuffered = true;
                 _jumpCutDone = false;
             }
             
             if(Input.GetKeyUp(PlayerController.Instance.jump) && _rigidbody.linearVelocityY > 0 && !_jumpCutDone) {
                 _isJumpRelease = true;
-                coyoteTimeCounter = 0f;
+                _coyoteTimeCounter = 0f;
             }
         }
         else if(PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
@@ -158,7 +158,6 @@ public class Player : MonoBehaviour
     }
 
     private void flipSprite() {
-        // add particles when changing direction
         if(_spriteRenderer.flipX != PlayerAnimation.Instance.getFlip() && isGrounded()) {
             CreateDust();
         }

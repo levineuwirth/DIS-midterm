@@ -25,10 +25,6 @@ public class Health : MonoBehaviour
     {
         invulnerabilityDuration -= Time.deltaTime;
 
-        if(Input.GetKeyDown(KeyCode.Backspace)) {
-            takeDamage(1);
-        }
-
         if(_currentHealth == 0) {
             PlayerAnimation.Instance.playerAnimator.SetBool("Dead", true);
         }

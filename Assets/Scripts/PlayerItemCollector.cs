@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerItemCollector : MonoBehaviour
 {
-    
     private bool isHoldingItem;
     private Item.IngredientType _currentIngredientType;
     private Collider2D _nearestIngredient;
@@ -10,6 +9,9 @@ public class PlayerItemCollector : MonoBehaviour
     public Vector2 pickUpHitboxSize;
     public LayerMask itemLayerMask;
     public LayerMask itemSubmitLayerMask;
+
+    [field: SerializeField] public AudioSource itemPickupSFX {get ; private set;}
+    [field: SerializeField] public AudioSource itemSubmitSFX {get ; private set;}
 
     public delegate void OnItemSubmit(Item.IngredientType currentIngredientType);
     public static OnItemSubmit EOnItemSubmit;
@@ -42,6 +44,7 @@ public class PlayerItemCollector : MonoBehaviour
 
         if(inItemSubmitter != null) {
             EOnItemSubmit?.Invoke(_currentIngredientType);
+            itemSubmitSFX.Play();
             _currentIngredientType = Item.IngredientType.None;
             isHoldingItem = false;
         }
@@ -61,7 +64,7 @@ public class PlayerItemCollector : MonoBehaviour
         if(_nearestIngredient != null) {
             _currentIngredientType = _nearestIngredient.GetComponent<Item>().ingredientID;
             isHoldingItem = true;
-
+            itemPickupSFX.Play();
             Debug.Log("pickedUpItem");
             EOnItemPickUp?.Invoke(_currentIngredientType);
         }
