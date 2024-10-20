@@ -61,6 +61,9 @@ public class Player : MonoBehaviour
         }
         else if(PlayerAnimation.Instance.playerAnimator.GetBool("Dead")) {
             postDeathTimer -= Time.deltaTime;
+            _rigidbody.linearVelocity = new Vector2(0, 0);
+            _rigidbody.gravityScale = 0;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
             if(postDeathTimer < 0) {
                 KillPlayer();
             }
@@ -153,9 +156,6 @@ public class Player : MonoBehaviour
     }
 
     private void KillPlayer() {
-        _rigidbody.linearVelocity = new Vector2(0, 0);
-
-
         SceneController.instance.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -176,4 +176,5 @@ public class Player : MonoBehaviour
     private void OnDestroy() {
         Health.EOnDamageTaken -= () => InvulnerabilityBlink();
     }
+
 }
