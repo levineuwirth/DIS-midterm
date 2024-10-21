@@ -6,23 +6,23 @@ using UnityEngine;
 public class ItemSpawner : MonoBehaviour
 {
     [Header("Level-Specific Data")]
-    public Item[] spawnableItems; // All items to be spawned, in order of spawning from level start.
-    public Item noneItem; // Special case item representing "nothing" (DO NOT ADD TO SPAWNABLE ITEMS!)
-    public float spawnDuration = 1f;
+    [field: SerializeField] public Item[] spawnableItems {get; private set;}
+    [field: SerializeField] public Item noneItem {get; private set;}
+    [field: SerializeField] public float spawnDuration {get; private set;}
 
-    private Queue<Item> spawns;
-    private GameObject lastSpawnedItem; // Reference to the last spawned item
-    private Item currentItem; // The current item, to use when we need to destroy it.
-    private bool addBack; // If we should add the item back into the queue.
+    private Queue<Item> _spawns;
+    private GameObject _lastSpawnedItem;
+    private Item _currentItem;
+    private bool _addBack;
     void Start()
     {
         // Initialize the queue
-        spawns = new Queue<Item>();
+        _spawns = new Queue<Item>();
 
         foreach (Item item in spawnableItems)
         {
-            spawns.Enqueue(item); // Add actual items
-            spawns.Enqueue(noneItem); // Add the "none" item as a placeholder
+            _spawns.Enqueue(item); // Add actual items
+            _spawns.Enqueue(noneItem); // Add the "none" item as a placeholder
         }
 
         // Start the spawning loop as a coroutine
@@ -36,22 +36,22 @@ public class ItemSpawner : MonoBehaviour
         { // Loop forever. We should have a reference to this from the player or otherwise stop it externally.
           // That stop will occur by destroying the GameObject.
             // Destroy the last spawned item before spawning a new one
-            if (lastSpawnedItem != null)
+            if (_lastSpawnedItem != null)
             {
-                Destroy(lastSpawnedItem);
-		        if(addBack){
-		            spawns.Enqueue(currentItem);
+                Destroy(_lastSpawnedItem);
+		        if(_addBack){
+		            _spawns.Enqueue(_currentItem);
 		        }
-                lastSpawnedItem = null; // Clear the reference after destroying
+                _lastSpawnedItem = null; // Clear the reference after destroying
             }
 
-            if (spawns.Count > 0)
+            if (_spawns.Count > 0)
             {
-                currentItem = spawns.Dequeue();
+                _currentItem = _spawns.Dequeue();
                 Vector3 spawnPosition = this.transform.position;
-		        addBack = true;
-		        if (currentItem != null && !currentItem.isNone){
-		            lastSpawnedItem = Instantiate(currentItem.gameObject, spawnPosition, Quaternion.identity);
+		        _addBack = true;
+		        if (_currentItem != null && !_currentItem.isNone){
+		            _lastSpawnedItem = Instantiate(_currentItem.gameObject, spawnPosition, Quaternion.identity);
 		        }
 	        }
                 
@@ -61,10 +61,10 @@ public class ItemSpawner : MonoBehaviour
 
     private void handleCollection(Item.IngredientType playerIngredient){
 	    Debug.Log("pickup event heard");
-        if(lastSpawnedItem != null) {
-            if(lastSpawnedItem.GetComponent<Item>().ingredientID == playerIngredient) {
-                Destroy(lastSpawnedItem);
-                addBack = false;
+        if(_lastSpawnedItem != null) {
+            if(_lastSpawnedItem.GetComponent<Item>().ingredientID == playerIngredient) {
+                Destroy(_lastSpawnedItem);
+                _addBack = false;
             }
         }
     }

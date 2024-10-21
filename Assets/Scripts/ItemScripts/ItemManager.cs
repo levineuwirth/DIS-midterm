@@ -5,12 +5,11 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     public static event Action EOnRecipeComplete;
-    public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
-	public List<ItemSlot> slots = new List<ItemSlot>();
-	public List<Sprite> itemSprites = new List<Sprite>();
-    private int recipeCompleteCounter;
+    [field: SerializeField] public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
+	[field: SerializeField] public List<ItemSlot> slots = new List<ItemSlot>();
+	[field: SerializeField] public List<Sprite> itemSprites = new List<Sprite>();
+    private int _recipeCompleteCounter;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         PlayerItemCollector.EOnItemSubmit += checkItemOnRecipe;
@@ -21,29 +20,29 @@ public class ItemManager : MonoBehaviour
             slot.setItemSprite();
             i++;
         }
-        recipeCompleteCounter = 0;
+        _recipeCompleteCounter = 0;
     }
 
     private void checkItemOnPickup(Item.IngredientType ingredient) {
         if(recipe.Contains(ingredient)) {
             int index = recipe.IndexOf(ingredient);
             slots[index].onItemPickup();
-    }
+        }
     }
 
     private void checkItemOnRecipe(Item.IngredientType ingredient) {
         if(recipe.Contains(ingredient)) {
             int index = recipe.IndexOf(ingredient);
             slots[index].onItemCollect();
-            recipeCompleteCounter++;
+            _recipeCompleteCounter++;
             Debug.Log("removed");
 
-            if (recipeCompleteCounter == recipe.Count)
+            if (_recipeCompleteCounter == recipe.Count)
             {
                     Debug.Log("Recipe is complete.");
                     EOnRecipeComplete?.Invoke();
             }
-    }
+        }
     }
 
     private void OnDestroy() {

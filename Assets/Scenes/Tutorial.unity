@@ -138,6 +138,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1482920768}
     m_Modifications:
     - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <noneItem>k__BackingField
+      value: 
+      objectReference: {fileID: 701889839}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: spawnableItems.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -145,6 +149,18 @@ PrefabInstance:
       propertyPath: 'spawnableItems.Array.data[0]'
       value: 
       objectReference: {fileID: 8998345610810982231, guid: 6fb84279d770e42a2ad5df03335026dc, type: 3}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnDuration>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnableItems>k__BackingField.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: '<spawnableItems>k__BackingField.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1614265474}
     - target: {fileID: 521936838665088679, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: m_Name
       value: Banana Spawner
@@ -450,6 +466,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1039121988684558854, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
   m_PrefabInstance: {fileID: 1240066222}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &220011815 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2426349703765806501, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
+  m_PrefabInstance: {fileID: 2245886915948680403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af030089266e82f178a643fab9863d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &370477203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1039121988684558854, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
@@ -464,6 +491,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6c195ab79b0ac6db83987c87dc23f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &502920163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5461333757941458440, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
+  m_PrefabInstance: {fileID: 2245886915948680403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af030089266e82f178a643fab9863d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &530738253 stripped
@@ -740,6 +778,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2494510791246512123, guid: 693f29172ed8971fca61e649327f7788, type: 3}
   m_PrefabInstance: {fileID: 1027429799}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &701889839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2907284804209224361, guid: 693f29172ed8971fca61e649327f7788, type: 3}
+  m_PrefabInstance: {fileID: 1027429799}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530738253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af030089266e82f178a643fab9863d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &807737214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8442170502688501698, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
@@ -811,9 +860,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 1482920768}
     m_Modifications:
     - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <noneItem>k__BackingField
+      value: 
+      objectReference: {fileID: 701889839}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: spawnableItems.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnDuration>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnableItems>k__BackingField.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: '<spawnableItems>k__BackingField.Array.data[0]'
+      value: 
+      objectReference: {fileID: 502920163}
     - target: {fileID: 521936838665088679, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: m_Name
       value: Apple Spawner
@@ -882,6 +947,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1482920768}
     m_Modifications:
     - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <noneItem>k__BackingField
+      value: 
+      objectReference: {fileID: 701889839}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: spawnableItems.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -893,6 +962,18 @@ PrefabInstance:
       propertyPath: 'spawnableItems.Array.data[1]'
       value: 
       objectReference: {fileID: 8056512524635033197, guid: b9ed74a0b294d40d19cfa1a2b0f4e219, type: 3}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnDuration>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: <spawnableItems>k__BackingField.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 20915374080880468, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
+      propertyPath: '<spawnableItems>k__BackingField.Array.data[0]'
+      value: 
+      objectReference: {fileID: 220011815}
     - target: {fileID: 521936838665088679, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
       propertyPath: m_Name
       value: Orange Spawner
@@ -1259,6 +1340,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1039121988684558854, guid: 0dbb100c95cb5248c9909dfc95fe6b31, type: 3}
   m_PrefabInstance: {fileID: 1048677201}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1614265474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2363686869832501289, guid: 9ac5f9f2a268d4f6895953b46e3740c6, type: 3}
+  m_PrefabInstance: {fileID: 2245886915948680403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af030089266e82f178a643fab9863d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1688613146
 GameObject:
   m_ObjectHideFlags: 0

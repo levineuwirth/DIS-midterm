@@ -7,18 +7,12 @@ using UnityEngine.UI;
 public class ItemSlot: MonoBehaviour
 {
     [Header("Slot-Specific Data")]
-    // The item that is in this slot of the recipe. This needs to be accessed by ItemManager.             
-    public Sprite associatedItem;
-    public Sprite notCollectedImage;
-    public Sprite holdingImage;
-    public Sprite collectedImage;
-    public GameObject itemVisualization;
-    public ItemVisualization iz;
-    void Awake(){
-    }
-
-    void Update(){
-    }
+    [field: SerializeField] public Sprite associatedItem;
+    [field: SerializeField] public Sprite notCollectedImage {get; private set;}
+    [field: SerializeField] public Sprite holdingImage {get; private set;}
+    [field: SerializeField] public Sprite collectedImage {get; private set;}
+    [field: SerializeField] public GameObject itemVisualization {get; private set;}    
+    [field: SerializeField] public ItemVisualization iz {get; private set;}
 
     public void onItemCollect(){
         this.gameObject.GetComponent<Image>().sprite = collectedImage;
