@@ -3,15 +3,15 @@ using UnityEngine;
 
 public class ItemVisualization : MonoBehaviour
 {
-    public SpriteRenderer renderer;
-    public Sprite itemSprite;
+    [field: SerializeField] public SpriteRenderer spriteRenderer {get ; private set;}
+    [field: SerializeField] public Sprite itemSprite {get ; private set;}
     
     public void Awake(){
-	    renderer = GetComponent<SpriteRenderer>();
+	    spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void setSprite(Sprite newSprite){
 	    itemSprite = newSprite;
-	    renderer.sprite = itemSprite;
+	    spriteRenderer.sprite = itemSprite;
     }
 }
