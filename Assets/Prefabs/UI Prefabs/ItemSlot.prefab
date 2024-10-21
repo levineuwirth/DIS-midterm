@@ -90,6 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   associatedItem: {fileID: 0}
   notCollectedImage: {fileID: 1711480110253230093, guid: 0edd8f25c92604e69af4d9caff3ed26b, type: 3}
+  holdingImage: {fileID: -599695333828052323, guid: 0edd8f25c92604e69af4d9caff3ed26b, type: 3}
   collectedImage: {fileID: -8592390932768213993, guid: 0edd8f25c92604e69af4d9caff3ed26b, type: 3}
   itemVisualization: {fileID: 7339652746917298924, guid: 4069bda595da2bb558c3eb413c49ed8f, type: 3}
   iz: {fileID: 0}

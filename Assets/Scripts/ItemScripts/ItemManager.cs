@@ -14,6 +14,7 @@ public class ItemManager : MonoBehaviour
     void Awake()
     {
         PlayerItemCollector.EOnItemSubmit += checkItemOnRecipe;
+        PlayerItemCollector.EOnItemPickUp += checkItemOnPickup;
 	    int i = 0;
         foreach (ItemSlot slot in slots){
             slot.associatedItem = itemSprites[i];
@@ -21,6 +22,13 @@ public class ItemManager : MonoBehaviour
             i++;
         }
         recipeCompleteCounter = 0;
+    }
+
+    private void checkItemOnPickup(Item.IngredientType ingredient) {
+        if(recipe.Contains(ingredient)) {
+            int index = recipe.IndexOf(ingredient);
+            slots[index].onItemPickup();
+    }
     }
 
     private void checkItemOnRecipe(Item.IngredientType ingredient) {
@@ -35,11 +43,7 @@ public class ItemManager : MonoBehaviour
                     Debug.Log("Recipe is complete.");
                     EOnRecipeComplete?.Invoke();
             }
-            
-        } else {
-	    // deal damage?
-	    // punishment here
-	    }
+    }
     }
 
     private void OnDestroy() {

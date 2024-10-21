@@ -10,6 +10,7 @@ public class ItemSlot: MonoBehaviour
     // The item that is in this slot of the recipe. This needs to be accessed by ItemManager.             
     public Sprite associatedItem;
     public Sprite notCollectedImage;
+    public Sprite holdingImage;
     public Sprite collectedImage;
     public GameObject itemVisualization;
     public ItemVisualization iz;
@@ -36,5 +37,9 @@ public class ItemSlot: MonoBehaviour
         } else {
             Debug.LogError("ItemVisualization component not found in the instantiated object or its children.");
         }
+    }
+
+    public void onItemPickup(){
+        this.gameObject.GetComponent<Image>().sprite = holdingImage;
     }
 }
