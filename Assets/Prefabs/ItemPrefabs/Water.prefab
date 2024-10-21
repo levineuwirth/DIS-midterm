@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: ingredientID
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8125846643275896824, guid: 8014511f7628145e49f2dd74b5b82c8f, type: 3}
+      propertyPath: <ingredientID>k__BackingField
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: ingredientID
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 2008701750050767979, guid: 40510545b01124aef85623fd9a62ccfc, type: 3}
+      propertyPath: <ingredientID>k__BackingField
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 2434419653420137729, guid: 40510545b01124aef85623fd9a62ccfc, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.32
@@ -66,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8056276470837459381, guid: 40510545b01124aef85623fd9a62ccfc, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Tomato
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

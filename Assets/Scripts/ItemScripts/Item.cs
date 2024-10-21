@@ -3,20 +3,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour {
     [Header("Properties")]
-    // Determines if the item is beneficial to the recipe or not.
-    // To be set on the basis of the current level.
-    public bool isTrash;
-    // Determines if this is the None item.
-    // If true, this is what we use to implement pauses in spawning via the ItemSpawner.
-    public bool isNone;
-    // This has to be public. The ItemSpawner needs to know where the item can spawn.
-    // Entries here also have to be in the ItemSpawner's spawn locations array.
-    public Vector3[] allowedLocations;
-    
-    // FOR SPECIFIC CONDITIONS ON SPAWNING, e.g. spawning inside the tutorial's oven when it is open,
-    // you MUST make a child class extending Item and implement the functionality on a case by case basis
 
-    public IngredientType ingredientID;
+    [field: SerializeField] public bool isTrash { get; private set; }
+
+    [field: SerializeField] public bool isNone { get; private set; }
+
+    [field: SerializeField] public Vector3[] allowedLocations { get; private set; }
+
+    [field: SerializeField] public IngredientType ingredientID { get; private set; }
 
     public enum IngredientType {
         Apple,

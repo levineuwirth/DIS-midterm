@@ -10,10 +10,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2934138983541448209, guid: 2d61b81a042094a9588381986e40de1e, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Beef
       objectReference: {fileID: 0}
     - target: {fileID: 6671472075355251663, guid: 2d61b81a042094a9588381986e40de1e, type: 3}
       propertyPath: ingredientID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671472075355251663, guid: 2d61b81a042094a9588381986e40de1e, type: 3}
+      propertyPath: <ingredientID>k__BackingField
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7403153484667787941, guid: 2d61b81a042094a9588381986e40de1e, type: 3}

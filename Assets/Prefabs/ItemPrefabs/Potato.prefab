@@ -10,10 +10,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3272230255115578123, guid: 6a805365801364b5fa61e38692ed8150, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Potato
       objectReference: {fileID: 0}
     - target: {fileID: 6432476488256378581, guid: 6a805365801364b5fa61e38692ed8150, type: 3}
       propertyPath: ingredientID
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6432476488256378581, guid: 6a805365801364b5fa61e38692ed8150, type: 3}
+      propertyPath: <ingredientID>k__BackingField
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8601039908993764675, guid: 6a805365801364b5fa61e38692ed8150, type: 3}

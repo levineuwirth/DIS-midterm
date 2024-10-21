@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: ingredientID
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6392971722854815416, guid: 0fe54de90f49c486ab7985528d5bf795, type: 3}
+      propertyPath: <ingredientID>k__BackingField
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7102451175073361874, guid: 0fe54de90f49c486ab7985528d5bf795, type: 3}
       propertyPath: m_Size.y
       value: 0.28

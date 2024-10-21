@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af030089266e82f178a643fab9863d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTrash: 0
-  isNone: 1
-  allowedLocations: []
+  <isTrash>k__BackingField: 0
+  <isNone>k__BackingField: 1
+  <allowedLocations>k__BackingField: []
+  <ingredientID>k__BackingField: 13

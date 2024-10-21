@@ -60,9 +60,13 @@ PrefabInstance:
       propertyPath: ingredientID
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2333269508341205157, guid: 18ef7b91c9b3240c880b873709deaa62, type: 3}
+      propertyPath: <ingredientID>k__BackingField
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6074374153799759227, guid: 18ef7b91c9b3240c880b873709deaa62, type: 3}
       propertyPath: m_Name
-      value: L_Item Variant
+      value: Rice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

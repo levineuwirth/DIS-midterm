@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: ingredientID
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 116962181606607079, guid: e28d9425739074ed997d3778b9416a38, type: 3}
+      propertyPath: <ingredientID>k__BackingField
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2484944923818198861, guid: e28d9425739074ed997d3778b9416a38, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.36701962

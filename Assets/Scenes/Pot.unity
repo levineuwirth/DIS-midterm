@@ -1436,6 +1436,22 @@ PrefabInstance:
       propertyPath: doorCollider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2385460151169192929, guid: 205d714652f9c4c5693aaf8fa8ab9278, type: 3}
+      propertyPath: <swingTime>k__BackingField
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385460151169192929, guid: 205d714652f9c4c5693aaf8fa8ab9278, type: 3}
+      propertyPath: <waterPrefab>k__BackingField
+      value: 
+      objectReference: {fileID: 2549499456637363593, guid: 25b85d641df1d440aab43ff2743e0d4c, type: 3}
+    - target: {fileID: 2385460151169192929, guid: 205d714652f9c4c5693aaf8fa8ab9278, type: 3}
+      propertyPath: <bubblePrefab>k__BackingField
+      value: 
+      objectReference: {fileID: 7214620673391272793, guid: b37512c902514469a852f0ed643cd1d0, type: 3}
+    - target: {fileID: 2385460151169192929, guid: 205d714652f9c4c5693aaf8fa8ab9278, type: 3}
+      propertyPath: <potLayerMask>k__BackingField.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6486045535872929249, guid: 205d714652f9c4c5693aaf8fa8ab9278, type: 3}
       propertyPath: m_Name
       value: Pot

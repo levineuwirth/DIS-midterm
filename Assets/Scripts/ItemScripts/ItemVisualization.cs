@@ -7,11 +7,11 @@ public class ItemVisualization : MonoBehaviour
     public Sprite itemSprite;
     
     public void Awake(){
-	renderer = GetComponent<SpriteRenderer>();
+	    renderer = GetComponent<SpriteRenderer>();
     }
 
     public void setSprite(Sprite newSprite){
-	itemSprite = newSprite;
-	renderer.sprite = itemSprite;
+	    itemSprite = newSprite;
+	    renderer.sprite = itemSprite;
     }
 }
