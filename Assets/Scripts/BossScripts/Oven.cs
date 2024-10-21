@@ -6,18 +6,18 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Oven : MonoBehaviour
 {
-    [field: SerializeField] public float swingTime;
-    [field: SerializeField] public LayerMask ovenLayerMask;
+    [field: SerializeField] public float swingTime { get; private set; }
+    [field: SerializeField] public LayerMask ovenLayerMask { get; private set; }
     [field: SerializeField] public Animator ovenAnimator { get; private set; }
-    [field: SerializeField] public GameObject fireballPrefab;
+    [field: SerializeField] public GameObject fireballPrefab { get; private set; }
 
-    private int counter;
+    private int _counter;
 
-    private AnimatorClipInfo[] CurrentClipInfo;
+    private AnimatorClipInfo[] _CurrentClipInfo;
 
-    private float shotDelayWall = 1.5f;
-    private float shotDelayZag = 0.5f;
-    private int shotType;
+    private float _shotDelayWall = 1.5f;
+    private float _shotDelayZag = 0.5f;
+    private int _shotType;
 
     void Start()
     {
@@ -25,34 +25,34 @@ public class Oven : MonoBehaviour
         ovenAnimator = gameObject.GetComponent<Animator>();
         ovenAnimator.SetBool("OvenWait", true);
         StartCoroutine(AnimOpen());
-        counter = 1;
+        _counter = 1;
     }
 
     void Update()
     {
-        CurrentClipInfo = this.ovenAnimator.GetCurrentAnimatorClipInfo(0);
-        shotDelayWall -= Time.deltaTime;
-        shotDelayZag -= Time.deltaTime;
-        if(CurrentClipInfo[0].clip.name == "OvenIdleOpen" || CurrentClipInfo[0].clip.name == "OvenOpen")
+        _CurrentClipInfo = this.ovenAnimator.GetCurrentAnimatorClipInfo(0);
+        _shotDelayWall -= Time.deltaTime;
+        _shotDelayZag -= Time.deltaTime;
+        if(_CurrentClipInfo[0].clip.name == "OvenIdleOpen" || _CurrentClipInfo[0].clip.name == "OvenOpen")
         {
-            if(shotType == 1)
+            if(_shotType == 1)
             {
-                if(shotDelayWall <= 0)
+                if(_shotDelayWall <= 0)
                 {
                     ShootFirewall();
-                    shotDelayWall = 1.5f;
+                    _shotDelayWall = 1.5f;
                 }
             }
-            else if(shotType == 2)
+            else if(_shotType == 2)
             {
-                if(shotDelayZag <= 0){
-                    ShootZigZag(counter);
-                    counter++;
-                    if (counter == 6)
+                if(_shotDelayZag <= 0){
+                    ShootZigZag(_counter);
+                    _counter++;
+                    if (_counter == 6)
                     {
-                        counter = 1;
+                        _counter = 1;
                     }
-                    shotDelayZag = 0.5f;
+                    _shotDelayZag = 0.5f;
                 }
             }
         }
@@ -72,19 +72,19 @@ public class Oven : MonoBehaviour
 
     }
 
-    void ShootZigZag(int counter)
+    void ShootZigZag(int _counter)
     {
         float spacingY = 1.5f;
         float spacingX = 4f;
 
-        Instantiate(fireballPrefab, transform.position + new Vector3(counter * spacingX - 4, counter * spacingY - 4, 0), Quaternion.identity);
+        Instantiate(fireballPrefab, transform.position + new Vector3(_counter * spacingX - 4, _counter * spacingY - 4, 0), Quaternion.identity);
 
     }
 
 
     private IEnumerator AnimOpen()
     {
-        shotType = Random.Range(1, 3);
+        _shotType = Random.Range(1, 3);
         float waitForOpen = 3f;
         yield return new WaitForSeconds(waitForOpen);
         ovenAnimator.SetBool("OvenWait", false);

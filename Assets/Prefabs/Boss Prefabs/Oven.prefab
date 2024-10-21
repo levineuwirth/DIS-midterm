@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2048968735
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -7294393051591735570, guid: b5c063128865d4b1584c2f1e0c333a47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -148,11 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594b1c103cca74e5784050586fadb45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swingTime: 0
-  ovenLayerMask:
+  <swingTime>k__BackingField: 0
+  <ovenLayerMask>k__BackingField:
     serializedVersion: 2
-    m_Bits: 1
-  fireballPrefab: {fileID: 2029023430850002957, guid: ac329edf9f0c64df5ab87d8a99883356, type: 3}
+    m_Bits: 0
+  <ovenAnimator>k__BackingField: {fileID: 0}
+  <fireballPrefab>k__BackingField: {fileID: 2029023430850002957, guid: ac329edf9f0c64df5ab87d8a99883356, type: 3}
 --- !u!95 &5237536862985827809
 Animator:
   serializedVersion: 7

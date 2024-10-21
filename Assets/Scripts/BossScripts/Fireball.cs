@@ -4,9 +4,9 @@ using System.Collections;
 public class Fireball : MonoBehaviour
 {
 
-	[field: SerializeField] public float speed;
-	[field: SerializeField] public float lifeTime;
-	[field: SerializeField] public Vector2 direction = new Vector2(-1, 0);
+	[field: SerializeField] public float speed { get; private set; }
+	[field: SerializeField] public float lifeTime { get; private set; }
+	[field: SerializeField] public Vector2 direction { get; private set; }
 
 	void Start()
 	{
