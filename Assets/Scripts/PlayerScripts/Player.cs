@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     [field: SerializeField] public float downwardForce {get ; private set;}
 
     [field: SerializeField] public float coyoteTime {get ; private set;}
-    private float _coyoteTimeCounter;
 
     [Header("Ground Check Visualizer")]
     [field: SerializeField] public Vector2 boxSize {get ; private set;}
@@ -29,6 +28,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private ParticleSystem _dust;
     private AudioSource _jumpSound;
+    private float _coyoteTimeCounter;
     private bool _isJumpBuffered = false;
     private bool _isJumpRelease = false;
     private bool _jumpCutDone = false;
@@ -112,12 +112,10 @@ public class Player : MonoBehaviour
             _isJumpBuffered = false;
             _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
-            // vfx and sfx
             CreateDust();
             PlayJumpSFX();
         }
 
-        // implement jump cut
         else if(_isJumpRelease) {
             _isJumpRelease = false;
             _jumpCutDone = true;
@@ -139,12 +137,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    // shoots a box raycast below the player to check if player is grounded
     private bool isGrounded() {
         return Physics2D.BoxCast(transform.position, boxSize, 0, -transform.up, castDistance, groundLayer);
     }
 
-    // visualizes the raycast hitbox and allows editing in the unity editor
     private void OnDrawGizmos() {
         Gizmos.DrawWireCube(transform.position - transform.up * castDistance, boxSize);
     }

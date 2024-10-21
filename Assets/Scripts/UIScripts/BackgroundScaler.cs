@@ -3,32 +3,29 @@ using UnityEngine.UI;
 
 public class BackgroundScaler : MonoBehaviour
 {
-    Image backgroundImage;
-    RectTransform rt;
-    float ratio;
+    private Image _backgroundImage;
+    private RectTransform _rectTransform;
+    private float _ratio;
 
-    // Start is called before the first frame update
     void Start()
     {
-        backgroundImage = GetComponent<Image>();
-        rt = backgroundImage.rectTransform;
-        ratio = backgroundImage.sprite.bounds.size.x / backgroundImage.sprite.bounds.size.y;
+        _backgroundImage = GetComponent<Image>();
+        _rectTransform = _backgroundImage.rectTransform;
+        _ratio = _backgroundImage.sprite.bounds.size.x / _backgroundImage.sprite.bounds.size.y;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (!rt)
+        if (!_rectTransform)
             return;
-
-        //Scale image proportionally to fit the screen dimensions, while preserving aspect ratio
-        if(Screen.height * ratio >= Screen.width)
+            
+        if(Screen.height * _ratio >= Screen.width)
         {
-            rt.sizeDelta = new Vector2(Screen.height * ratio, Screen.height);
+            _rectTransform.sizeDelta = new Vector2(Screen.height * _ratio, Screen.height);
         }
         else
         {
-            rt.sizeDelta = new Vector2(Screen.width, Screen.width / ratio);
+            _rectTransform.sizeDelta = new Vector2(Screen.width, Screen.width / _ratio);
         }
     }
 }
