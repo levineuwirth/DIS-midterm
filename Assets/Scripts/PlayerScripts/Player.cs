@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        Health.EOnDamageTaken += () => InvulnerabilityBlink();
+        Health.EOnDamageTaken += InvulnerabilityBlink;
         _rigidbody = gameObject.GetComponent<Rigidbody2D>();
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _dust = gameObject.GetComponent<ParticleSystem>();
@@ -184,7 +184,6 @@ public class Player : MonoBehaviour
     }
 
     private void OnDestroy() {
-        Health.EOnDamageTaken -= () => InvulnerabilityBlink();
+        Health.EOnDamageTaken -= InvulnerabilityBlink;
     }
-
 }
