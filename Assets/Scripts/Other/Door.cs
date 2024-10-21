@@ -7,14 +7,14 @@ public class Door : MonoBehaviour
     public static Animator doorAnimator;
     [field: SerializeField] public AudioSource doorOpenSFX {get ; private set;}
     [field: SerializeField] public Animator loadingScreen {get ; private set;}
-    private BoxCollider2D doorCollider;
+    private BoxCollider2D _doorCollider;
 
     private void Start() {
         doorAnimator = gameObject.GetComponent<Animator>();
-        doorCollider = gameObject.GetComponent<BoxCollider2D>();
+        _doorCollider = gameObject.GetComponent<BoxCollider2D>();
 
-        doorCollider.enabled = false;
-        doorCollider.isTrigger = false;
+        _doorCollider.enabled = false;
+        _doorCollider.isTrigger = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -36,8 +36,8 @@ public class Door : MonoBehaviour
     {
         Debug.Log("Recipe Complete! Opening Door");
         doorAnimator.SetBool("OpenDoor", true);
-        doorCollider.enabled = true;
-	    doorCollider.isTrigger = true;
+        _doorCollider.enabled = true;
+	    _doorCollider.isTrigger = true;
         doorOpenSFX.Play();
     }
 

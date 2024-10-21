@@ -7,7 +7,6 @@ public class SC_MainMenu : MonoBehaviour
     public GameObject MainMenu;
     public GameObject CreditsMenu;
     public string scene;
-    // Start is called before the first frame update
     void Start()
     {
         MainMenuButton();
@@ -21,7 +20,6 @@ public class SC_MainMenu : MonoBehaviour
 
     public void CreditsButton()
     {
-        // Show Credits Menu
         MainMenu.SetActive(false);
         CreditsMenu.SetActive(true);
     }
