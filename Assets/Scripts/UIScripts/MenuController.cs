@@ -27,18 +27,21 @@ public class MenuController : MonoBehaviour
         }
     }
     public void Pause() {
-        isGamePaused = true;
-        PausePanel.SetActive(true);
-        Time.timeScale = 0;
+        if(!ControlPanel.activeSelf) {
+            isGamePaused = true;
+            PausePanel.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
 
     public void Unpause() {
-        isGamePaused = false;
-        PausePanel.SetActive(false);
-        Time.timeScale = 1;
+        if(!ControlPanel.activeSelf) {
+            isGamePaused = false;
+            PausePanel.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
     public void EnterControlPanel() {
-        Debug.Log("entered control panel");
         if(PausePanel != null) {
             PausePanel.SetActive(false);
         }
