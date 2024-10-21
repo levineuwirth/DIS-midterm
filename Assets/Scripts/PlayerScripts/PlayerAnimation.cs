@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    public Animator playerAnimator {get ; private set;}
+    [field: SerializeField] public Animator playerAnimator {get ; private set;}
     public static PlayerAnimation Instance;
     private bool _flip;
 

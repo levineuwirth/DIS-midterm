@@ -28,8 +28,4 @@ public class Item : MonoBehaviour {
         Rice,
         None
     }
-
-    private void Awake() {
-        Debug.Log(ingredientID);
-    }
 }

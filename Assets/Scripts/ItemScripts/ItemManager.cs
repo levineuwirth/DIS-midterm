@@ -5,21 +5,15 @@ using UnityEngine;
 public class ItemManager : MonoBehaviour
 {
     public static event Action EOnRecipeComplete;
-    [field: SerializeField] public List<Item.IngredientType> recipe = new List<Item.IngredientType>();
-	[field: SerializeField] public List<ItemSlot> slots = new List<ItemSlot>();
-	[field: SerializeField] public List<Sprite> itemSprites = new List<Sprite>();
+    [field: SerializeField] public List<Item.IngredientType> recipe {get; private set;}
+	[field: SerializeField] public List<ItemSlot> slots {get; private set;}
+	[field: SerializeField] public List<Sprite> itemSprites {get; private set;}
     private int _recipeCompleteCounter;
     
     void Awake()
     {
         PlayerItemCollector.EOnItemSubmit += checkItemOnRecipe;
         PlayerItemCollector.EOnItemPickUp += checkItemOnPickup;
-	    int i = 0;
-        foreach (ItemSlot slot in slots){
-            slot.associatedItem = itemSprites[i];
-            slot.setItemSprite();
-            i++;
-        }
         _recipeCompleteCounter = 0;
     }
 
@@ -47,5 +41,6 @@ public class ItemManager : MonoBehaviour
 
     private void OnDestroy() {
         PlayerItemCollector.EOnItemSubmit -= checkItemOnRecipe;
+        PlayerItemCollector.EOnItemPickUp -= checkItemOnPickup;
     }
  }

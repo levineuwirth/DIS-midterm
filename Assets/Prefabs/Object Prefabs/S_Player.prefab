@@ -101,11 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1d85f749c77344e3b52e76435c0d458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickUpHitboxSize: {x: 1, y: 2}
-  itemLayerMask:
+  <pickUpHitboxSize>k__BackingField: {x: 1, y: 2}
+  <itemLayerMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 128
-  itemSubmitLayerMask:
+  <itemSubmitLayerMask>k__BackingField:
     serializedVersion: 2
     m_Bits: 256
   <itemPickupSFX>k__BackingField: {fileID: 8604107518817191901}
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aec2d9b5f2ef41fdbbfc4d15cffe0bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <playerAnimator>k__BackingField: {fileID: 0}
 --- !u!114 &6973153422045914360
 MonoBehaviour:
   m_ObjectHideFlags: 0

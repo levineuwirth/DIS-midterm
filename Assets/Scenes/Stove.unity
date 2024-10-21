@@ -279,6 +279,54 @@ PrefabInstance:
       propertyPath: 'recipe.Array.data[3]'
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: <slots>k__BackingField.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: <recipe>k__BackingField.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1623609800}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1242481759}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1884623218}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[3]'
+      value: 
+      objectReference: {fileID: 647936536}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[4]'
+      value: 
+      objectReference: {fileID: 345493174}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<slots>k__BackingField.Array.data[5]'
+      value: 
+      objectReference: {fileID: 879874591}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<recipe>k__BackingField.Array.data[0]'
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<recipe>k__BackingField.Array.data[1]'
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<recipe>k__BackingField.Array.data[2]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5225122644971412626, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
+      propertyPath: '<recipe>k__BackingField.Array.data[3]'
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6759447005412082890, guid: 928456faeaba9442c9b27c73f3d5019f, type: 3}
       propertyPath: m_Name
       value: ItemManager
