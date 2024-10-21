@@ -1676,7 +1676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3482682609332488733, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3986702611566336715, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
       propertyPath: m_Color.b
@@ -1836,7 +1836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8812520801844097172, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
       propertyPath: m_text
-      value: Submit Item
+      value: Submit Items At The Fridge
       objectReference: {fileID: 0}
     - target: {fileID: 8812520801844097172, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
       propertyPath: m_fontSize
@@ -1854,6 +1854,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 2455174174921173460, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
     - {fileID: 3331357897437110248, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
+    - {fileID: 5388148717174605833, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a06068991a02b48f88fc7d65c9d21d07, type: 3}
