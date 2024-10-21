@@ -4,15 +4,15 @@ using System.Collections;
 public class WaterDrop : MonoBehaviour
 {
 
-	[field: SerializeField] public float speed ;
-	[field: SerializeField] public float lifeTime;
-	[field: SerializeField] public Vector2 direction;
-	private float waterAngleLeft = -1.2f;
-	private float waterAngleRight = 2.2f;
+	[field: SerializeField] public float speed { get; private set; }
+	[field: SerializeField] public float lifeTime { get; private set; }
+	[field: SerializeField] public Vector2 direction { get; private set; }
+	private float _waterAngleLeft = -1.2f;
+	private float _waterAngleRight = 2.2f;
 
 	void Start()
 	{
-		direction = new Vector2(Random.Range(waterAngleLeft, waterAngleRight), 1);
+		direction = new Vector2(Random.Range(_waterAngleLeft, _waterAngleRight), 1);
 		direction.Normalize();
 		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);

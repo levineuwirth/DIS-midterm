@@ -6,15 +6,14 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Pot : MonoBehaviour
 {
-    [field: SerializeField] public float swingTime;
-    [field: SerializeField] public LayerMask potLayerMask;
+    [field: SerializeField] public float swingTime { get; private set; }
+    [field: SerializeField] public LayerMask potLayerMask { get; private set; }
     [field: SerializeField] public Animator potAnimator { get; private set; }
-    [field: SerializeField] public GameObject bubblePrefab;
-    [field: SerializeField] public GameObject waterPrefab;
-
-    private AnimatorClipInfo[] CurrentClipInfo;
-    private float shotDelay = 0.3f;
-    private int shotType;
+    [field: SerializeField] public GameObject bubblePrefab { get; private set; }
+    [field: SerializeField] public GameObject waterPrefab { get; private set; }
+    private AnimatorClipInfo[] _currentClipInfo;
+    private float _shotDelay = 0.3f;
+    private int _shotType;
 
     void Start()
     {
@@ -26,24 +25,24 @@ public class Pot : MonoBehaviour
 
     void Update()
     {
-        CurrentClipInfo = this.potAnimator.GetCurrentAnimatorClipInfo(0);
-        shotDelay -= Time.deltaTime;
-        if (CurrentClipInfo[0].clip.name == "PotClose" || CurrentClipInfo[0].clip.name == "PotCloseIdle")
+        _currentClipInfo = this.potAnimator.GetCurrentAnimatorClipInfo(0);
+        _shotDelay -= Time.deltaTime;
+        if (_currentClipInfo[0].clip.name == "PotClose" || _currentClipInfo[0].clip.name == "PotCloseIdle")
         {
-            if (shotType == 1)
+            if (_shotType == 1)
             {
-                if (shotDelay <= 0)
+                if (_shotDelay <= 0)
                 {
                     ShootBubbleRand();
-                    shotDelay = 0.3f;
+                    _shotDelay = 0.3f;
                 }
             }
-            else if (shotType == 2)
+            else if (_shotType == 2)
             {
-                if (shotDelay <= 0)
+                if (_shotDelay <= 0)
                 {
                     ShootWater();
-                    shotDelay = 0.3f;
+                    _shotDelay = 0.3f;
                 }
             }
         }
@@ -63,7 +62,7 @@ public class Pot : MonoBehaviour
 
     private IEnumerator AnimOpen()
     {
-        shotType = Random.Range(1, 3);
+        _shotType = Random.Range(1, 3);
         float waitForOpen = 3;
         yield return new WaitForSeconds(waitForOpen);
         potAnimator.SetBool("PotWait", false);

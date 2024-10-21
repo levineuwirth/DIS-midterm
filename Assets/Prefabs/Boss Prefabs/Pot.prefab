@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2048968735
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 8200443108533574130, guid: 5f63863cc1a394c5d96a171fac67fe31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,12 +102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a461e2fe4ce794a0dacd507830f962a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swingTime: 1.5
-  potLayerMask:
+  <swingTime>k__BackingField: 1.5
+  <potLayerMask>k__BackingField:
     serializedVersion: 2
-    m_Bits: 1
-  bubblePrefab: {fileID: 7214620673391272793, guid: b37512c902514469a852f0ed643cd1d0, type: 3}
-  waterPrefab: {fileID: 2549499456637363593, guid: 25b85d641df1d440aab43ff2743e0d4c, type: 3}
+    m_Bits: 0
+  <potAnimator>k__BackingField: {fileID: 0}
+  <bubblePrefab>k__BackingField: {fileID: 7214620673391272793, guid: b37512c902514469a852f0ed643cd1d0, type: 3}
+  <waterPrefab>k__BackingField: {fileID: 2549499456637363593, guid: 25b85d641df1d440aab43ff2743e0d4c, type: 3}
 --- !u!95 &9193263801320734431
 Animator:
   serializedVersion: 7
