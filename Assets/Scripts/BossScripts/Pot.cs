@@ -6,38 +6,30 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Pot : MonoBehaviour
 {
-    public float swingTime;
-    public LayerMask potLayerMask;
-    public Animator potAnimator { get; private set; }
-    public GameObject bubblePrefab;
-    public GameObject waterPrefab;
+    [field: SerializeField] public float swingTime;
+    [field: SerializeField] public LayerMask potLayerMask;
+    [field: SerializeField] public Animator potAnimator { get; private set; }
+    [field: SerializeField] public GameObject bubblePrefab;
+    [field: SerializeField] public GameObject waterPrefab;
 
     private AnimatorClipInfo[] CurrentClipInfo;
     private float shotDelay = 0.3f;
     private int shotType;
 
-
-    //private SpriteRenderer spriteRenderer;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //spriteRenderer = GetComponent<SpriteRenderer>();
         swingTime = Random.Range(0.5f, 1.5f);
         potAnimator = gameObject.GetComponent<Animator>();
         potAnimator.SetBool("PotWait", true);
         StartCoroutine(AnimOpen());
     }
 
-    // Update is called once per frame
     void Update()
     {
         CurrentClipInfo = this.potAnimator.GetCurrentAnimatorClipInfo(0);
-        // Debug.Log(CurrentClipInfo[0].clip.name);
         shotDelay -= Time.deltaTime;
         if (CurrentClipInfo[0].clip.name == "PotClose" || CurrentClipInfo[0].clip.name == "PotCloseIdle")
         {
-            // Debug.Log("right clip");
             if (shotType == 1)
             {
                 if (shotDelay <= 0)
@@ -48,10 +40,8 @@ public class Pot : MonoBehaviour
             }
             else if (shotType == 2)
             {
-                // Debug.Log("right shot type");
                 if (shotDelay <= 0)
                 {
-                    // Debug.Log("shot delay over");
                     ShootWater();
                     shotDelay = 0.3f;
                 }

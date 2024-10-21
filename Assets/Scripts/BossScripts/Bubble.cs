@@ -5,13 +5,16 @@ using UnityEngine.InputSystem.Controls;
 public class Bubble : MonoBehaviour
 {
 
-	public float speed;
-	public float lifeTime;
-	public Vector2 direction;
+	[field: SerializeField] public float speed;
+	[field: SerializeField] public float lifeTime;
+	[field: SerializeField] public Vector2 direction;
+
+	private float bubbleAngleLeft = -0.7f;
+	private float bubbleAngleRight = 1.7f;
 
 	void Start()
 	{
-		direction = new Vector2(Random.Range(-1.25f, 2.25f), 1);
+		direction = new Vector2(Random.Range(bubbleAngleLeft, bubbleAngleRight), 1);
 		direction.Normalize();
 		float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -26,10 +29,4 @@ public class Bubble : MonoBehaviour
 		transform.position += new Vector3(direction.x, direction.y, 0) * speed * Time.deltaTime;
 	}
 
-	/**
-		void OnTriggerEnter2D(Collider2D other)
-		{
-
-		}
-	**/
 }

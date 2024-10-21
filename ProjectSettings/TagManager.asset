@@ -45,11 +45,11 @@ TagManager:
   - name: Background
     uniqueID: 2885460747
     locked: 0
-  - name: 'Level '
-    uniqueID: 2245998561
-    locked: 0
   - name: Projectiles
     uniqueID: 3883077175
+    locked: 0
+  - name: 'Level '
+    uniqueID: 2245998561
     locked: 0
   - name: In-Game UI
     uniqueID: 3494739775

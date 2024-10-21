@@ -6,12 +6,11 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Oven : MonoBehaviour
 {
-    public float swingTime;
-    public LayerMask ovenLayerMask;
-    public Animator ovenAnimator { get; private set; }
-    public GameObject fireballPrefab;
+    [field: SerializeField] public float swingTime;
+    [field: SerializeField] public LayerMask ovenLayerMask;
+    [field: SerializeField] public Animator ovenAnimator { get; private set; }
+    [field: SerializeField] public GameObject fireballPrefab;
 
-    private bool shootReady;
     private int counter;
 
     private AnimatorClipInfo[] CurrentClipInfo;
@@ -20,13 +19,8 @@ public class Oven : MonoBehaviour
     private float shotDelayZag = 0.5f;
     private int shotType;
 
-
-    //private SpriteRenderer spriteRenderer;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //spriteRenderer = GetComponent<SpriteRenderer>();
         swingTime = Random.Range(1f, 5f);
         ovenAnimator = gameObject.GetComponent<Animator>();
         ovenAnimator.SetBool("OvenWait", true);
@@ -34,7 +28,6 @@ public class Oven : MonoBehaviour
         counter = 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         CurrentClipInfo = this.ovenAnimator.GetCurrentAnimatorClipInfo(0);
@@ -42,7 +35,6 @@ public class Oven : MonoBehaviour
         shotDelayZag -= Time.deltaTime;
         if(CurrentClipInfo[0].clip.name == "OvenIdleOpen" || CurrentClipInfo[0].clip.name == "OvenOpen")
         {
-            // Debug.Log("right clip");
             if(shotType == 1)
             {
                 if(shotDelayWall <= 0)
@@ -53,20 +45,16 @@ public class Oven : MonoBehaviour
             }
             else if(shotType == 2)
             {
-                // Debug.Log("right shot type");
                 if(shotDelayZag <= 0){
-                    // Debug.Log("shot delay over");
                     ShootZigZag(counter);
                     counter++;
                     if (counter == 6)
                     {
-                        // Debug.Log("counter reset");
                         counter = 1;
                     }
                     shotDelayZag = 0.5f;
                 }
             }
-            // Debug.Log("shot delay reset");
         }
 
     }
